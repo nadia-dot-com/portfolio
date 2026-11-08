@@ -1,0 +1,54 @@
+{
+    "nav": {
+        "about": "Co robię",
+        "portfolio": "Portfolio",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "role": "Frontend Developer",
+        "intro": "Hej! Mam na imię Nadiia, jestem frontend developerką. Lubię pisać czysty kod, ograniczać zbędne zależności i tworzyć intuicyjne interfejsy.",
+        "cta": "Napisz do mnie",
+        "cv": "Pobierz CV"
+    },
+    "services": {
+        "title": "Co potrafię",
+        "frontend": {
+            "title": "Tworzenie frontendu",
+            "text": "Buduję aplikacje webowe w React, Next.js, Angular i TypeScript, z czystym kodem i minimum zależności."
+        },
+        "responsive": {
+            "title": "Responsywny i dostępny interfejs",
+            "text": "Tworzę interfejsy, które dobrze działają na komputerze, tablecie i telefonie, z naciskiem na wygodę użytkownika."
+        },
+        "testing": {
+            "title": "Testy i dokumentacja",
+            "text": "Piszę testy komponentów, e2e (Vitest, React Testing Library, Cypress) oraz dokumentuję komponenty w Storybooku."
+        }
+    },
+    "skills": {
+        "title": "Umiejętności i narzędzia"
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "live": "Demo",
+        "code": "Kod",
+        "video": "Wideo z działania",
+        "salesAssistant": {
+            "title": "Sales Assistant",
+            "text": "Sklep internetowy z asystentem AI w formie czatu dla pracowników sklepu.",
+            "contributionTitle": "Mój wkład",
+            "items": {
+                "assistant": "Sales Assistant: asystent AI w formie czatu, który pomaga pracownikom sklepu doradzać produkty klientom. Zbudowałam frontend: rozpoznawanie mowy (Web Speech API), interfejs czatu z tagami słów kluczowych i siatką produktów, historię sesji z przywracaniem pozycji przewijania, stany ładowania i błędów.",
+                "store": "Sklep internetowy (commercetools): strona produktu, koszyk (commercetools + Context API + useActionState + Server Actions), anonimowy koszyk dla gości łączony z koszykiem klienta po zalogowaniu oraz wieloetapowy checkout."
+            }
+        },
+        "houseStaff": {
+            "title": "House Staff",
+            "text": "Sklep internetowy z koszykiem i listą życzeń dla gości i zalogowanych użytkowników, logowaniem przez Google i składaniem zamówień przez REST API w Node/Express. Responsywny interfejs z code splittingiem, testami komponentów i dokumentacją w Storybooku."
+        }
+    },
+    "contact": {
+        "title": "Kontakt",
+        "text": "Jestem otwarta na nowe propozycje pracy i ciekawe projekty."
+    }
+}

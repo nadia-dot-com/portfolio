@@ -1,0 +1,54 @@
+{
+    "nav": {
+        "about": "How I work",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "hero": {
+        "role": "Frontend Developer",
+        "intro": "I’m Nadiia, a frontend developer. I like clean code, fewer dependencies and interfaces that feel obvious to use.",
+        "cta": "Contact me",
+        "cv": "Download CV"
+    },
+    "services": {
+        "title": "What I can do",
+        "frontend": {
+            "title": "Frontend development",
+            "text": "I build web applications with React, Next.js, Angular and TypeScript, with clean code and minimal dependencies."
+        },
+        "responsive": {
+            "title": "Responsive and accessible UI",
+            "text": "I make interfaces that work smoothly on desktop, tablet and mobile, with user-friendly design."
+        },
+        "testing": {
+            "title": "Testing and documentation",
+            "text": "I write component and e2e tests (Vitest, React Testing Library, Cypress) and document components in Storybook."
+        }
+    },
+    "skills": {
+        "title": "Skills and tools"
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "live": "Live demo",
+        "code": "Code",
+        "video": "Demo video",
+        "salesAssistant": {
+            "title": "Sales Assistant",
+            "text": "An online store with an AI chat assistant for store employees. An internal training project at Columbus.",
+            "contributionTitle": "My contribution",
+            "items": {
+                "assistant": "Sales Assistant: an AI chat assistant that helps store employees recommend products to customers. I built the frontend: voice recognition (Web Speech API), the chat interface with keyword tags and product grid, session history with restored scroll position, loading and error states.",
+                "store": "Online store (commercetools): the product page, the cart (commercetools + Context API + useActionState + Server Actions), an anonymous cart for guests that merges with the customer cart after sign-in, and a multi-step checkout."
+            }
+        },
+        "houseStaff": {
+            "title": "House Staff",
+            "text": "An e-commerce storefront with a cart and wishlist for guests and signed-in users, Google sign-in and order placement through a Node/Express REST API. Responsive UI with code splitting, component tests and Storybook documentation."
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "text": "I'm open to new job opportunities and interesting projects."
+    }
+}
