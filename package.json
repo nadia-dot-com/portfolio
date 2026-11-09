@@ -10,10 +10,16 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "@chakra-ui/cli": "^3.38.0",
+    "@chakra-ui/react": "^3.38.0",
+    "@emotion/react": "^11.14.0",
+    "add": "^2.0.9",
     "next": "16.4.5",
     "next-intl": "^4.14.9",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-country-flag": "^3.1.0",
+    "react-dom": "19.3.0",
+    "snippet": "^0.1.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.2",

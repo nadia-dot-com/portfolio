@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   experimental: {
     agentFeedback: true,
+    optimizePackageImports: ["@chakra-ui/react"],
   },
   cacheComponents: true,
   partialPrefetching: true,
