@@ -27,7 +27,8 @@
         }
     },
     "skills": {
-        "title": "Umiejętności i narzędzia"
+        "title": "Umiejętności i narzędzia",
+        "text": "Umiejętności, narzędzia i technologie, których używam:"
     },
     "portfolio": {
         "title": "Portfolio",
@@ -50,6 +51,17 @@
     },
     "contact": {
         "title": "Kontakt",
-        "text": "Jestem otwarta na nowe propozycje pracy i ciekawe projekty."
+        "text": "Jestem otwarta na nowe propozycje pracy i ciekawe projekty.",
+        "contactDataTitle": "Kontakt",
+        "socialMediaTitle": "Social media",
+        "contactData": {
+            "phone": "+48 577 736 858",
+            "email": "nadiialezhanska@gmail.com",
+            "location": "Wrocław, Polska"
+        },
+        "socialMedia": {
+            "github": "https://github.com/nadia-dot-com",
+            "linkedin": "https://www.linkedin.com/in/nadiia-lezhanska"
+        }
     }
 }

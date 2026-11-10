@@ -27,7 +27,8 @@
         }
     },
     "skills": {
-        "title": "Навички та інструменти"
+        "title": "Навички та інструменти",
+        "text": "Навички, інструменти та технології, які я використовую:"
     },
     "portfolio": {
         "title": "Портфоліо",
@@ -50,6 +51,17 @@
     },
     "contact": {
         "title": "Контакти",
-        "text": "Я відкрита до нових пропозицій роботи та цікавих проєктів."
+        "text": "Я відкрита до нових пропозицій роботи та цікавих проєктів.",
+        "contactDataTitle": "Контакти",
+        "socialMediaTitle": "Соціальні мережі",
+        "contactData": {
+            "phone": "+48 577 736 858",
+            "email": "nadiialezhanska@gmail.com",
+            "location": "Вроцлав, Польща"
+        },
+        "socialMedia": {
+            "github": "https://github.com/nadia-dot-com",
+            "linkedin": "https://www.linkedin.com/in/nadiia-lezhanska"
+        }
     }
 }

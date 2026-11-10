@@ -38,6 +38,7 @@ export const styles = {
     paddingY: 1,
     gap: 2,
     rounded: "lg",
+    transition: "background-color 0.25s ease",
     _highlighted: {
       backgroundColor: "border-color",
     },

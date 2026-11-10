@@ -66,6 +66,20 @@ export const styles = {
         borderColor: "border-color",
         rounded: "xl",
         backgroundColor: "background-color",
+        opacity: 0,
+        visibility: "hidden",
+        pointerEvents: "none",
+        transform: "translateY(-8px)",
+        transition: "opacity 0.25s ease, transform 0.25s ease, visibility 0.25s",
+        _open: {
+            opacity: 1,
+            visibility: "visible",
+            pointerEvents: "auto",
+            transform: "translateY(0)",
+        },
+        _motionReduce: {
+            transition: "none",
+        },
     },
     mobileLink: {
         fontSize: "xs",

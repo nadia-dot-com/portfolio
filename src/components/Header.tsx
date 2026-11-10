@@ -33,12 +33,12 @@ export function Header() {
             </Flex>
             <LanguageSwitcher />
             <Flex {...styles.mobileMenu}>
-                <Button onClick={() => setIsOpen((prev) => !prev)}>
+                <Button onClick={() => setIsOpen((prev) => !prev)} aria-expanded={isOpen}>
                     <Icon {...styles.icon}>
                         <Menu />
                     </Icon>
                 </Button>
-                <List.Root {...styles.mobileList} hidden={!isOpen}>
+                <List.Root {...styles.mobileList} data-open={isOpen || undefined}>
                     {links.map(link => (
                         <List.Item key={link.id}>
                             <NextLink href={`#${link.id}`} {...styles.mobileLink}>{link.label}</NextLink>

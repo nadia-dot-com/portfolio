@@ -719,6 +719,39 @@
   dependencies:
     "@formatjs/fast-memoize" "3.1.7"
 
+"@iconify-icons/logos@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/logos/-/logos-2.0.6.tgz#af98415ee9fad3fbee47442f3034f77d514f1a7a"
+  integrity sha512-TSA01vkvURfQwLYdStv5+n/iF6ewPPeaqcSoApSqHOZ656uSO/1193TbY5WktKvwbAKEcxzewSw5z0N2Re75Ug==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-icons/material-symbols@^2.0.10":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/material-symbols/-/material-symbols-2.0.10.tgz#e81e9f34fbb9072da0b7dfb7cabc43feb002ea49"
+  integrity sha512-tCC6GAMhz3Clurww2DHDkYyw6f5im5mM7PXxhltKgwsPGeV77eAbBYOq1Q/jqIVi5ieqoZ1LXuDD4ioz5D2OjA==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-icons/tabler@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/tabler/-/tabler-2.0.6.tgz#01907e19a8e899f4665127939b3a706d6026c2bf"
+  integrity sha512-QPrdKFHalvzIIdcIZ0ajQyNHLntS926mBDxfEljxOdvHnUObdWrbxHFhBAlHKieastKLC+DMOCoI6JqkiD9IRw==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify/react@^6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@iconify/react/-/react-6.0.4.tgz#f69bf710027e3e61eba8fb86de57821d67883ddc"
+  integrity sha512-7nKd1eF52E1QGIl46eDWfMNPuTQHUxsXoK2Evgtu5jr386jCWTuWFLHM9vfsTNbUcKp+uq6ao+3skNUalDhH/w==
+  dependencies:
+    "@iconify/types" "^2.0.0"
+
+"@iconify/types@*", "@iconify/types@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
+  integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
+
 "@img/colour@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@img/colour/-/colour-1.1.0.tgz#b0c2c2fa661adf75effd6b4964497cd80010bb9d"

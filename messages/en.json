@@ -27,7 +27,8 @@
         }
     },
     "skills": {
-        "title": "Skills and tools"
+        "title": "Skills & tools",
+        "text": "The skills, tools and technologies I use:"
     },
     "portfolio": {
         "title": "Portfolio",
@@ -49,7 +50,17 @@
         }
     },
     "contact": {
-        "title": "Contact",
-        "text": "I'm open to new job opportunities and interesting projects."
+        "title": "I'm open to new job opportunities and interesting projects.",
+        "contactDataTitle": "Contact",
+        "contactData": {
+            "phone": "+48 577 736 858",
+            "email": "nadiialezhanska@gmail.com",
+            "location": "Wrocław, Poland"
+        },
+        "socialMediaTitle": "Social Media",
+        "socialMedia": {
+            "github": "https://github.com/nadia-dot-com",
+            "linkedin": "https://www.linkedin.com/in/nadiia-lezhanska"
+        }
     }
 }

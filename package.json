@@ -13,6 +13,7 @@
     "@chakra-ui/cli": "^3.38.0",
     "@chakra-ui/react": "^3.38.0",
     "@emotion/react": "^11.14.0",
+    "@iconify/react": "^6.0.4",
     "add": "^2.0.9",
     "lucide-react": "^1.71.0",
     "next": "16.4.5",
@@ -24,6 +25,9 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.2",
+    "@iconify-icons/logos": "^2.0.6",
+    "@iconify-icons/material-symbols": "^2.0.10",
+    "@iconify-icons/tabler": "^2.0.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

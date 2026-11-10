@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { Nunito_Sans, Manrope } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
-import { Box } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { Header } from "@/components/Header";
 import { Provider } from "@/components/Provider";
 import { routing } from "@/i18n/routing";
+import { styles } from "@/app/[locale]/layout.styles";
 
 const nunitoSans = Nunito_Sans({
   variable: "--font-nunito-sans",
@@ -33,9 +34,9 @@ export default function RootLayout({ children }: LayoutProps<"/[locale]">) {
         <NextIntlClientProvider>
           <Provider>
             <Header />
-            <Box as="main">
+            <Flex as="main" {...styles.main}>
               {children}
-            </Box>
+            </Flex>
           </Provider>
         </NextIntlClientProvider>
       </body>
