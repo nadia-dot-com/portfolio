@@ -11,9 +11,46 @@ export const system = createSystem(defaultConfig, {
       xxl: "1440px",
     },
     tokens: {
+      sizes: {
+        content: { value: "1152px" },
+      },
       fonts: {
         body: { value: "var(--text-font-family)" },
         heading: { value: "var(--heading-font-family)" },
+      },
+    },
+    layerStyles: {
+      bordered: {
+        value: {
+          border: "1px solid",
+          borderColor: "border-color",
+        },
+      },
+      card: {
+        value: {
+          border: "1px solid",
+          borderColor: "border-color",
+          borderRadius: "2xl",
+          paddingX: { base: 5, md: 8 },
+          paddingY: { base: 5, md: 7 },
+          background:
+            "linear-gradient(135deg, color-mix(in srgb, var(--accent-blue-color) 6%, transparent), transparent 70%)",
+        },
+      },
+    },
+    textStyles: {
+      cardTitle: {
+        value: {
+          fontSize: { base: "xl", md: "2xl" },
+          fontWeight: "500",
+        },
+      },
+      bodyText: {
+        value: {
+          fontSize: "sm",
+          fontWeight: "600",
+          lineHeight: "1.5",
+        },
       },
     },
     semanticTokens: {

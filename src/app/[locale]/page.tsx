@@ -84,10 +84,10 @@ export default async function Home() {
     <>
       <Flex as="section" {...styles.heroSection}>
         <Flex {...styles.content}>
-          <Heading {...styles.title}>
+          <Heading {...styles.heroTitle}>
             {t("hero.role")}
           </Heading>
-          <Text {...styles.text}>
+          <Text {...styles.heroText}>
             {t("hero.intro")}
           </Text>
           <Flex {...styles.actions}>
@@ -103,8 +103,8 @@ export default async function Home() {
           </Flex>
         </Flex>
       </Flex>
-      <Flex as="section" {...styles.servicesSection}>
-        <Heading {...styles.title} {...styles.sectionTitle}>
+      <Flex as="section" {...styles.section}>
+        <Heading {...styles.sectionTitle}>
           {t("services.title")}
         </Heading>
         <Flex {...styles.servicesList}>
@@ -112,18 +112,19 @@ export default async function Home() {
             <Fragment key={key}>
               {index > 0 && <Box {...styles.serviceConnector} />}
               <Flex
+                {...styles.card}
                 {...styles.serviceCard}
                 {...(index % 2 === 1 && styles.serviceCardRight)}
               >
                 <Flex {...styles.serviceHeader}>
-                  <Icon {...styles.serviceIcon}>
+                  <Icon {...styles.accentIcon}>
                     <ServiceIcon />
                   </Icon>
-                  <Heading as="h3" {...styles.serviceTitle}>
+                  <Heading as="h3" textStyle="cardTitle">
                     {t(`services.${key}.title`)}
                   </Heading>
                 </Flex>
-                <Text {...styles.serviceText}>
+                <Text textStyle="bodyText">
                   {t(`services.${key}.text`)}
                 </Text>
               </Flex>
@@ -131,12 +132,12 @@ export default async function Home() {
           ))}
         </Flex>
       </Flex>
-      <Flex as="section" {...styles.skillSection}>
-        <Heading {...styles.title} {...styles.sectionTitle}>
+      <Flex as="section" {...styles.section}>
+        <Heading {...styles.sectionTitle}>
           {t("skills.title")}
         </Heading>
         <Flex {...styles.skillContent}>
-          <Text {...styles.skillText}>
+          <Text {...styles.introText}>
             {t("skills.text")}
           </Text>
           <List.Root aria-label={t("skills.title")} {...styles.skillList}>
@@ -156,13 +157,13 @@ export default async function Home() {
           </List.Root>
         </Flex>
       </Flex>
-      <Flex as="section" {...styles.contactSection}>
-        <Heading {...styles.title} {...styles.sectionTitle}>
+      <Flex as="section" {...styles.section}>
+        <Heading {...styles.sectionTitle}>
           {t("contact.title")}
         </Heading>
         <Flex {...styles.contactBoxes}>
-          <Flex {...styles.contactBox}>
-            <Heading as="h3" {...styles.contactBoxTitle}>
+          <Flex {...styles.card} {...styles.contactBox}>
+            <Heading as="h3" textStyle="cardTitle">
               {t("contact.contactDataTitle")}
             </Heading>
             <List.Root {...styles.contactList}>
@@ -175,7 +176,7 @@ export default async function Home() {
                       <IconifyIcon icon={icon} />
                     </Icon>
                     {href ? (
-                      <Link href={href(value)} {...styles.contactLink}>
+                      <Link href={href(value)} {...styles.link}>
                         {value}
                       </Link>
                     ) : (
@@ -186,8 +187,8 @@ export default async function Home() {
               })}
             </List.Root>
           </Flex>
-          <Flex {...styles.contactBox}>
-            <Heading as="h3" {...styles.contactBoxTitle}>
+          <Flex {...styles.card} {...styles.contactBox}>
+            <Heading as="h3" textStyle="cardTitle">
               {t("contact.socialMediaTitle")}
             </Heading>
             <List.Root {...styles.socialList}>
@@ -210,7 +211,7 @@ export default async function Home() {
           </Flex>
         </Flex>
       </Flex>
-      <Text {...styles.right}>© 2026 {t("logoTitle")}</Text>
+      <Text {...styles.copyright}>© 2026 {t("logoTitle")}</Text>
     </>
   );
 }

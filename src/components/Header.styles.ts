@@ -1,4 +1,11 @@
 import type { GlobalStyleObject } from "@chakra-ui/react";
+import { accentHover, gutterX } from "@/charka/shared";
+
+const link = {
+    fontSize: "xs",
+    textTransform: "uppercase",
+    _hover: accentHover,
+} as const;
 
 export const styles = {
     root: {
@@ -8,13 +15,12 @@ export const styles = {
         gridTemplateColumns: {base:"auto 1fr auto", md: "1fr auto 1fr"},
         alignItems: "center",
         width: "100%",
-        maxWidth: "1152px",
+        maxWidth: "content",
         paddingY: "4",
-        border: "1px solid",
-        borderColor: "border-color",
+        layerStyle: "bordered",
         borderRadius: "2xl",
         background: "header-background-color",
-        paddingX: { base: "10px", sm: "20px", md: "30px" }
+        paddingX: gutterX,
     },
     logo: {
         fontSize: "md",
@@ -34,14 +40,7 @@ export const styles = {
         listStyle: "none",
         fontWeight: "600"
     },
-    link: {
-        fontSize: "xs",
-        textTransform: "uppercase",
-        _hover: {
-            textDecoration: "none",
-            color: "accent-pink-color",
-        },
-    },
+    link,
     icon: {
         height: "30px",
         width: "30px",
@@ -62,8 +61,7 @@ export const styles = {
         fontWeight: "600",
         width: "140px",
         padding: 1,
-        border: "1px solid",
-        borderColor: "border-color",
+        layerStyle: "bordered",
         rounded: "xl",
         backgroundColor: "background-color",
         opacity: 0,
@@ -82,12 +80,7 @@ export const styles = {
         },
     },
     mobileLink: {
-        fontSize: "xs",
-        textTransform: "uppercase",
+        ...link,
         paddingX: 2,
-        _hover: {
-            textDecoration: "none",
-            color: "accent-pink-color",
-        },
     },
 } as const satisfies GlobalStyleObject;

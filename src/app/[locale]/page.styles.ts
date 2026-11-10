@@ -1,14 +1,45 @@
 import type { GlobalStyleObject } from "@chakra-ui/react";
+import { accentHover } from "@/charka/shared";
+
+const gradientText = {
+    fontWeight: "600",
+    lineHeight: "1.1",
+    textTransform: "uppercase",
+    bgGradient: "to-r",
+    gradientFrom: "accent-pink-color",
+    gradientTo: "accent-blue-color",
+    bgClip: "text",
+    color: "transparent",
+} as const;
+
+const accentIcon = {
+    boxSize: 6,
+    color: "accent-blue-color",
+    filter: "drop-shadow(0 0 6px var(--accent-blue-color))",
+} as const;
+
+const list = {
+    display: "flex",
+    listStyle: "none",
+} as const;
+
+const section = {
+    flexDir: "column",
+    width: "full",
+    borderBottom: "1px solid",
+    borderColor: "border-color",
+} as const;
 
 export const styles = {
     heroSection: {
-        flexDir: "column",
+        ...section,
         justifyContent: "space-between",
-        width: "100%",
-        maxWidth: "1152px",
-        borderBottom: "1px solid",
-        borderColor: "border-color",
-        clipPath: "inset(0 -100vh 0 -100vw)"
+        clipPath: "inset(0 -100vh 0 -100vw)",
+    },
+    section: {
+        ...section,
+        paddingY: { base: 12, md: 20 },
+        gap: { base: 10, md: 20 },
     },
     imageBox: {
         position: "relative",
@@ -21,7 +52,7 @@ export const styles = {
             content: '""',
             position: "absolute",
             zIndex: -1,
-            pointerEvents: 'none',
+            pointerEvents: "none",
             width: "500px",
             height: "500px",
             background: "radial-gradient(circle, color-mix(in srgb, var(--accent-blue-color) 15%, transparent) 0%, transparent 65%)"
@@ -45,8 +76,8 @@ export const styles = {
     },
     content: {
         flexDir: "column",
-        alignItems: { base: "center", xs: "flex-start" },
-        textAlign: { base: "center", xs: "left" },
+        alignItems: { base: "center", sm: "flex-start" },
+        textAlign: { base: "center", sm: "left" },
         justifyContent: "flex-start",
         gap: { base: 6, md: 8 },
         maxWidth: "600px",
@@ -55,18 +86,11 @@ export const styles = {
         position: "relative",
         zIndex: 1,
     },
-    title: {
+    heroTitle: {
+        ...gradientText,
         fontSize: { base: "4xl", md: "5xl" },
-        fontWeight: "600",
-        lineHeight: "1.1",
-        textTransform: "uppercase",
-        bgGradient: "to-r",
-        gradientFrom: "accent-pink-color",
-        gradientTo: "accent-blue-color",
-        bgClip: "text",
-        color: "transparent",
     },
-    text: {
+    heroText: {
         fontSize: { base: "md", md: "xl" },
         lineHeight: "1.5",
         fontWeight: 600,
@@ -87,34 +111,25 @@ export const styles = {
         gradientTo: "accent-blue-color",
         backgroundOrigin: "border-box",
     },
-    servicesSection: {
-        flexDir: "column",
-        width: "full",
-        maxWidth: "1152px",
-        paddingY: { base: 12, md: 20 },
-        gap: { base: 10, md: 20 },
-        borderBottom: "1px solid",
-        borderColor: "border-color",
-    },
     sectionTitle: {
+        ...gradientText,
         width: "fit-content",
         fontSize: { base: "3xl", md: "4xl" },
-        alignSelf: { base: "center", md: "flex-start" },
+        alignSelf: { base: "center", sm: "flex-start" },
+        textAlign: { base: "center", sm: "left" },
     },
+    card: {
+        layerStyle: "card",
+        flexDir: "column",
+        gap: 4,
+    },
+    accentIcon,
     servicesList: {
         flexDir: "column",
         alignItems: { base: "stretch", md: "flex-start" },
     },
     serviceCard: {
-        flexDir: "column",
-        gap: 3,
         width: { base: "100%", md: "64%" },
-        paddingX: { base: 5, md: 8 },
-        paddingY: { base: 5, md: 7 },
-        border: "1px solid",
-        borderColor: "border-color",
-        borderRadius: "2xl",
-        background: "linear-gradient(135deg, color-mix(in srgb, var(--accent-blue-color) 6%, transparent), transparent 70%)",
     },
     serviceCardRight: {
         alignSelf: { base: "stretch", md: "flex-end" },
@@ -123,115 +138,62 @@ export const styles = {
         alignItems: "center",
         gap: 4,
     },
-    serviceIcon: {
-        boxSize: 6,
-        color: "accent-blue-color",
-        filter: "drop-shadow(0 0 6px var(--accent-blue-color))",
-    },
-    serviceTitle: {
-        fontSize: { base: "xl", md: "2xl" },
-        fontWeight: "500",
-    },
-    serviceText: {
-        fontSize: "sm",
-        fontWeight: "600",
-        lineHeight: "1.5",
-    },
     serviceConnector: {
         width: "1px",
         height: { base: 8, md: "60px" },
         marginLeft: { base: "50%", md: "calc(36% + 30px)" },
         background: "border-color",
     },
-    skillSection: {
-        flexDir: "column",
-        width: "full",
-        maxWidth: "1152px",
-        paddingY: { base: 12, md: 20 },
-        gap: { base: 10, md: 16 },
-        borderBottom: "1px solid",
-        borderColor: "border-color",
+    introText: {
+        fontSize: { base: "lg", md: "2xl" },
+        fontWeight: "600",
+        textAlign: "center",
     },
     skillContent: {
         flexDir: "column",
         alignItems: "center",
         gap: { base: 8, md: 10 },
     },
-    skillText: {
-        fontSize: { base: "lg", md: "2xl" },
-        fontWeight: "600",
-        textAlign: "center",
-    },
     skillList: {
-        display: "flex",
+        ...list,
         flexDir: "row",
         flexWrap: "wrap",
         justifyContent: "center",
         gap: { base: 6, md: 10 },
         maxWidth: "820px",
-        listStyle: "none",
     },
     skillIcon: {
         boxSize: { base: "40px", md: "56px" },
-    },
-    contactSection: {
-        flexDir: "column",
-        width: "full",
-        maxWidth: "1152px",
-        paddingY: { base: 12, md: 20 },
-        gap: { base: 10, md: 20 },
-        borderBottom: "1px solid",
-        borderColor: "border-color",
     },
     contactBoxes: {
         flexDir: { base: "column", md: "row" },
         gap: { base: 4, md: 6 },
     },
     contactBox: {
-        flexDir: "column",
         flex: 1,
-        gap: 4,
-        paddingX: { base: 5, md: 8 },
-        paddingY: { base: 5, md: 7 },
-        border: "1px solid",
-        borderColor: "border-color",
-        borderRadius: "2xl",
-        background: "linear-gradient(135deg, color-mix(in srgb, var(--accent-blue-color) 6%, transparent), transparent 70%)",
-    },
-    contactBoxTitle: {
-        fontSize: { base: "xl", md: "2xl" },
-        fontWeight: "500",
-        textTransform: "uppercase",
     },
     contactList: {
-        display: "flex",
+        ...list,
         flexDir: "column",
         gap: 3,
-        listStyle: "none",
     },
     contactItem: {
         display: "flex",
         alignItems: "center",
         gap: 3,
-        fontSize: "sm",
-        fontWeight: "600",
+        textStyle: "bodyText",
     },
     contactIcon: {
+        ...accentIcon,
         boxSize: 5,
-        color: "accent-blue-color",
-        filter: "drop-shadow(0 0 6px var(--accent-blue-color))",
-    },
-    contactLink: {
-        _hover: {
-            textDecoration: "none",
-            color: "accent-pink-color",
-        },
     },
     socialList: {
-        display: "flex",
+        ...list,
         flexDir: "row",
         gap: 5,
-        listStyle: "none",
+    },
+    link: {
+        _hover: accentHover,
     },
     socialLink: {
         color: "accent-blue-color",
@@ -243,7 +205,7 @@ export const styles = {
         boxSize: 7,
         filter: "drop-shadow(0 0 6px currentColor)",
     },
-    right: {
+    copyright: {
         fontSize: "xs",
         paddingY: 3
     }
