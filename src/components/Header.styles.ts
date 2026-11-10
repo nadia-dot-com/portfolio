@@ -5,7 +5,7 @@ export const styles = {
         position: "sticky",
         top: 0,
         zIndex: "modal",
-        gridTemplateColumns: "1fr auto 1fr",
+        gridTemplateColumns: {base:"auto 1fr auto", md: "1fr auto 1fr"},
         alignItems: "center",
         width: "100%",
         maxWidth: "1152px",
@@ -14,7 +14,7 @@ export const styles = {
         borderColor: "border-color",
         borderRadius: "2xl",
         background: "header-background-color",
-        paddingX: { base: "20px", md: "30px"}
+        paddingX: { base: "10px", sm: "20px", md: "30px" }
     },
     logo: {
         fontSize: "md",
@@ -23,19 +23,54 @@ export const styles = {
         fontWeight: "600"
     },
     nav: {
-        justifyContent: "center",
+        display: { base: "none", md: "flex" },
+        alignItems: "center",
     },
     list: {
         display: "flex",
         flexDir: "row",
         alignItems: "center",
-        gap: "6",
+        gap: 6,
         listStyle: "none",
         fontWeight: "600"
     },
     link: {
         fontSize: "xs",
         textTransform: "uppercase",
+        _hover: {
+            textDecoration: "none",
+            color: "accent-pink-color",
+        },
+    },
+    icon: {
+        height: "30px",
+        width: "30px",
+    },
+    mobileMenu: {
+        display: { base: "flex", md: "none" },
+    },
+    mobileList: {
+        position: "absolute",
+        top: "89%",
+        right: 0,
+        zIndex: "modal",
+        display: "flex",
+        flexDir: "column",
+        alignItems: "flex-start",
+        gap: 2,
+        listStyle: "none",
+        fontWeight: "600",
+        width: "140px",
+        padding: 1,
+        border: "1px solid",
+        borderColor: "border-color",
+        rounded: "xl",
+        backgroundColor: "background-color",
+    },
+    mobileLink: {
+        fontSize: "xs",
+        textTransform: "uppercase",
+        paddingX: 2,
         _hover: {
             textDecoration: "none",
             color: "accent-pink-color",
