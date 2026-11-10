@@ -3,8 +3,8 @@ import { Nunito_Sans, Manrope } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { Flex } from "@chakra-ui/react";
-import { Header } from "@/components/Header";
-import { Provider } from "@/components/Provider";
+import { Header } from "@/components/Header/Header";
+import { Provider } from "@/components/Provider/Provider";
 import { routing } from "@/i18n/routing";
 import { styles } from "@/app/[locale]/layout.styles";
 

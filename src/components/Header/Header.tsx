@@ -2,8 +2,8 @@
 
 import { Flex, Grid, Text, List, Button, Icon, } from "@chakra-ui/react";
 import { useTranslations } from "next-intl";
-import { NextLink } from "@/components/NextLink";
-import { LanguageSwitcher } from "./LanguageSwitcher";
+import { NextLink } from "@/components/NextLink/NextLink";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher/LanguageSwitcher";
 import { styles } from "./Header.styles";
 import { Menu } from "lucide-react";
 import { useState } from "react";
