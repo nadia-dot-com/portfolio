@@ -13,14 +13,15 @@ export function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     const links = [
-        { id: "about", label: t("nav.about") },
+        { id: "services", label: t("nav.services") },
         { id: "portfolio", label: t("nav.portfolio") },
+        { id: "skills", label: t("nav.skillsAndTools") },
         { id: "contact", label: t("nav.contact") },
     ];
 
     return (
         <Grid as="header" {...styles.root}>
-            <Text {...styles.logo}>{t("logoTitle")}</Text>
+          < NextLink href="#hero"><Text {...styles.logo}>{t("logoTitle")}</Text></NextLink>
             <Flex as="nav" {...styles.nav}>
                 <List.Root {...styles.list}>
                     {links.map(link => (

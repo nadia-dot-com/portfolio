@@ -5,6 +5,7 @@ import { accentIcon, card, list } from "@/components/shared.styles";
 export const styles = {
     boxes: {
         flexDir: { base: "column", md: "row" },
+        width: "full",
         gap: { base: 4, md: 6 },
     },
     box: {

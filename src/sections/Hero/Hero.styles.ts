@@ -42,6 +42,7 @@ export const styles = {
     },
     content: {
         flexDir: "column",
+        alignSelf:  { base: "center", sm: "flex-start" },
         alignItems: { base: "center", sm: "flex-start" },
         textAlign: { base: "center", sm: "left" },
         justifyContent: "flex-start",

@@ -1,5 +1,9 @@
 {
     "logoTitle": "Nadiia Lezhanska",
+    "meta": {
+        "title": "Надія Лежанська | Frontend Developer",
+        "description": "Перегляньте моє портфоліо: фронтенд-проєкти на React, Next.js та Angular."
+    },
     "nav": {
         "about": "Як я працюю",
         "portfolio": "Портфоліо",

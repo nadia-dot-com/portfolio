@@ -1,5 +1,9 @@
 {
     "logoTitle": "Nadiia Lezhanska",
+    "meta": {
+        "title": "Nadiia Lezhanska | Frontend Developer",
+        "description": "Sprawdź moje portfolio: projekty frontendowe w React, Next.js i Angularze."
+    },
     "nav": {
         "about": "Co robię",
         "portfolio": "Portfolio",

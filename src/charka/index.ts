@@ -26,6 +26,17 @@ export const system = createSystem(defaultConfig, {
           borderColor: "border-color",
         },
       },
+      glass: {
+        value: {
+          border: "1px solid",
+          borderColor: "glass-border-color",
+          background:
+            "color-mix(in srgb, var(--background-color) 60%, transparent)",
+          backdropFilter: "blur(16px) saturate(160%)",
+          boxShadow:
+            "inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 8px 32px rgba(0, 0, 0, 0.25)",
+        },
+      },
       card: {
         value: {
           border: "1px solid",
@@ -60,7 +71,7 @@ export const system = createSystem(defaultConfig, {
         "accent-pink-color": { value: "var(--accent-pink-color)" },
         "accent-blue-color": { value: "var(--accent-blue-color)" },
         "border-color": { value: "var(--border-color)" },
-        "header-background-color": { value: "var(--header-background-color)" },
+        "glass-border-color": { value: "var(--glass-border-color)" },
       },
     },
   },

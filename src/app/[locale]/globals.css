@@ -4,6 +4,7 @@
   --accent-pink-color: #cd3b99;
   --accent-blue-color: #337fd3;
   --border-color: #414a5a;
+  --glass-border-color: rgba(255, 255, 255, 0.12);
   --text-font-family: var(--font-manrope);
   --heading-font-family: var(--font-nunito-sans);
 }
@@ -11,9 +12,16 @@
 html {
   height: 100%;
   max-width: 100dvw;
-  overflow-x: hidden;
+  overflow-x: clip;
   background: var(--background-color);
   color-scheme: dark;
+  scroll-padding-top: 100px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
@@ -27,7 +35,6 @@ body {
   font-family: var(--text-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
 }
 
 * {

@@ -4,7 +4,7 @@ import linkedinOutline from "@iconify-icons/tabler/brand-linkedin";
 import mail from "@iconify-icons/tabler/mail";
 import mapPin from "@iconify-icons/tabler/map-pin";
 import phone from "@iconify-icons/tabler/phone";
-import { Icon as IconifyIcon } from "@iconify/react/offline";
+import { SymbolIcon } from "@/components/SymbolIcon/SymbolIcon";
 import { getTranslations } from "next-intl/server";
 import { styles } from "./Contact.styles";
 import { Section } from "@/components/Section/Section";
@@ -24,7 +24,7 @@ export async function Contact() {
   const t = await getTranslations();
 
   return (
-    <Section title={t("contact.title")}>
+    <Section title={t("contact.title")} id="contact">
       <Flex {...styles.boxes}>
         <Flex {...styles.box}>
           <Heading as="h3" textStyle="cardTitle">
@@ -37,7 +37,7 @@ export async function Contact() {
               return (
                 <List.Item key={key} {...styles.dataItem}>
                   <Icon {...styles.dataIcon}>
-                    <IconifyIcon icon={icon} />
+                    <SymbolIcon icon={icon} />
                   </Icon>
                   {href ? (
                     <Link href={href(value)} {...styles.link}>
@@ -66,7 +66,7 @@ export async function Contact() {
                   {...styles.socialLink}
                 >
                   <Icon {...styles.socialIcon}>
-                    <IconifyIcon icon={icon} />
+                    <SymbolIcon icon={icon} />
                   </Icon>
                 </Link>
               </List.Item>

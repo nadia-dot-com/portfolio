@@ -22,7 +22,7 @@ import tailwind from "@iconify-icons/logos/tailwindcss-icon";
 import testingLibrary from "@iconify-icons/logos/testing-library";
 import typescript from "@iconify-icons/logos/typescript-icon";
 import vitest from "@iconify-icons/logos/vitest";
-import { Icon as IconifyIcon } from "@iconify/react/offline";
+import { SymbolIcon } from "@/components/SymbolIcon/SymbolIcon";
 import { getTranslations } from "next-intl/server";
 import { Section } from "@/components/Section/Section";
 import { styles } from "./Skills.styles";
@@ -57,7 +57,7 @@ export async function Skills() {
   const t = await getTranslations();
 
   return (
-    <Section title={t("skills.title")}>
+    <Section title={t("skills.title")} id="skills">
       <Flex {...styles.content}>
         <Text {...styles.intro}>
           {t("skills.text")}
@@ -72,7 +72,7 @@ export async function Skills() {
                 {...styles.icon}
                 filter={invert ? "invert(1)" : undefined}
               >
-                <IconifyIcon icon={icon} />
+                <SymbolIcon icon={icon} />
               </Icon>
             </List.Item>
           ))}

@@ -30,7 +30,7 @@ export const styles = {
     border: "1px solid",
     borderColor: "border-color",
     rounded: "xl",
-    backgroundColor: "background-color",
+    backgroundColor: "background-color/90",
   },
   item: {
     justifyContent: "space-between",

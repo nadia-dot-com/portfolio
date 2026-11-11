@@ -15,7 +15,7 @@ export async function Services() {
   const t = await getTranslations();
 
   return (
-    <Section title={t("services.title")}>
+    <Section title={t("services.title")} id="services">
       <Flex {...styles.list}>
         {services.map(({ key, icon: ServiceIcon }, index) => (
           <Fragment key={key}>

@@ -1,13 +1,14 @@
-import { Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Button, Flex, Heading, Image, Text, } from "@chakra-ui/react";
 import NextImage from "next/image";
 import { getTranslations } from "next-intl/server";
 import { styles } from "./Hero.styles";
+import { NextLink } from "@/components/NextLink/NextLink";
 
 export async function Hero() {
   const t = await getTranslations();
 
   return (
-    <Flex as="section" {...styles.root}>
+    <Flex as="section" id="hero" {...styles.root}>
       <Flex {...styles.content}>
         <Heading {...styles.title}>
           {t("hero.role")}
@@ -16,7 +17,11 @@ export async function Hero() {
           {t("hero.intro")}
         </Text>
         <Flex {...styles.actions}>
-          <Button {...styles.button}>{t("hero.cta")}</Button>
+          <Button {...styles.button}>
+            <NextLink href="#contact">
+            {t("hero.cta")}
+            </NextLink>
+          </Button>
           <Button {...styles.button}>{t("hero.cv")}</Button>
         </Flex>
       </Flex>
