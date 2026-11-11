@@ -35,17 +35,31 @@
         "text": "Umiejętności, narzędzia i technologie, których używam:"
     },
     "portfolio": {
-        "title": "Portfolio",
-        "live": "Demo",
-        "code": "Kod",
+        "eyebrow": "Portfolio",
+        "title": "Projekty",
+        "builtTitle": "Co zrobiłam",
+        "live": "Przejdź do dema",
         "video": "Wideo z działania",
+        "gallery": {
+            "previous": "Poprzedni zrzut ekranu",
+            "next": "Następny zrzut ekranu",
+            "close": "Zamknij"
+        },
         "salesAssistant": {
             "title": "Sales Assistant",
-            "text": "Sklep internetowy z asystentem AI w formie czatu dla pracowników sklepu.",
-            "contributionTitle": "Mój wkład",
+            "text": "Asystent, który pomaga sprzedawcy znaleźć odpowiedni produkt, głosowo lub tekstowo.",
             "items": {
-                "assistant": "Sales Assistant: asystent AI w formie czatu, który pomaga pracownikom sklepu doradzać produkty klientom. Zbudowałam frontend: rozpoznawanie mowy (Web Speech API), interfejs czatu z tagami słów kluczowych i siatką produktów, historię sesji z przywracaniem pozycji przewijania, stany ładowania i błędów.",
-                "store": "Sklep internetowy (commercetools): strona produktu, koszyk (commercetools + Context API + useActionState + Server Actions), anonimowy koszyk dla gości łączony z koszykiem klienta po zalogowaniu oraz wieloetapowy checkout."
+                "voice": "Rozpoznawanie mowy",
+                "chat": "Czat z wynikami produktów",
+                "pdp": "Strona produktu (PDP)",
+                "cart": "Koszyk i checkout",
+                "anonymousCart": "Anonimowy koszyk z commercetools",
+                "footer": "Stopka"
+            },
+            "screens": {
+                "voice": "Głos",
+                "chat": "Wyniki czatu",
+                "product": "Strona produktu"
             }
         },
         "houseStaff": {

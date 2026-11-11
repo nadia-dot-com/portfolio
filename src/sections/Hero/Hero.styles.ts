@@ -1,5 +1,5 @@
 import type { GlobalStyleObject } from "@chakra-ui/react";
-import { gradientText, sectionBase } from "@/components/shared.styles";
+import { button, gradientText, sectionBase } from "@/components/shared.styles";
 
 export const styles = {
     root: {
@@ -66,16 +66,5 @@ export const styles = {
         flexWrap: "wrap",
         gap: 6,
     },
-    button: {
-        paddingX: 5,
-        borderRadius: "xl",
-        fontSize: "sm",
-        fontWeight: "600",
-        textTransform: "uppercase",
-        color: "white",
-        bgGradient: "to-r",
-        gradientFrom: "accent-pink-color",
-        gradientTo: "accent-blue-color",
-        backgroundOrigin: "border-box",
-    },
+    button,
 } as const satisfies GlobalStyleObject;

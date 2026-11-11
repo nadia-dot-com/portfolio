@@ -34,7 +34,7 @@ export const system = createSystem(defaultConfig, {
             "color-mix(in srgb, var(--background-color) 60%, transparent)",
           backdropFilter: "blur(16px) saturate(160%)",
           boxShadow:
-            "inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 8px 32px rgba(0, 0, 0, 0.25)",
+            "inset 0 1px 0 var(--glass-highlight-color), 0 8px 32px var(--glass-shadow-color)",
         },
       },
       card: {
@@ -67,11 +67,17 @@ export const system = createSystem(defaultConfig, {
     semanticTokens: {
       colors: {
         "background-color": { value: "var(--background-color)" },
-        "foreground-color": { value: "var(--background-color)" },
+        "surface-color": { value: "var(--surface-color)" },
+        "background-hover-color": { value: "var(--background-hover-color)" },
+        "foreground-color": { value: "var(--foreground-color)" },
         "accent-pink-color": { value: "var(--accent-pink-color)" },
         "accent-blue-color": { value: "var(--accent-blue-color)" },
         "border-color": { value: "var(--border-color)" },
         "glass-border-color": { value: "var(--glass-border-color)" },
+        "text-muted-color": { value: "var(--text-muted-color)" },
+        "text-soft-color": { value: "var(--text-soft-color)" },
+        "dot-color": { value: "var(--dot-color)" },
+        "overlay-color": { value: "var(--overlay-color)" },
       },
     },
   },

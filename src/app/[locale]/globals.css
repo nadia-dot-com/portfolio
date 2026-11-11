@@ -1,10 +1,18 @@
 :root {
   --background-color: #111723;
+  --surface-color: #172030;
+  --background-hover-color: #212d43;
   --foreground-color: #ffffff;
   --accent-pink-color: #cd3b99;
   --accent-blue-color: #337fd3;
   --border-color: #414a5a;
   --glass-border-color: rgba(255, 255, 255, 0.12);
+  --glass-highlight-color: rgba(255, 255, 255, 0.12);
+  --glass-shadow-color: rgba(0, 0, 0, 0.25);
+  --text-muted-color: rgba(255, 255, 255, 0.64);
+  --text-soft-color: rgba(255, 255, 255, 0.8);
+  --dot-color: rgba(255, 255, 255, 0.16);
+  --overlay-color: rgba(0, 0, 0, 0.8);
   --text-font-family: var(--font-manrope);
   --heading-font-family: var(--font-nunito-sans);
 }

@@ -27,6 +27,19 @@ export const sectionBase = {
     borderColor: "border-color",
 } as const;
 
+export const button = {
+    paddingX: 5,
+    borderRadius: "xl",
+    fontSize: "sm",
+    fontWeight: "600",
+    textTransform: "uppercase",
+    color: "foreground-color",
+    bgGradient: "to-r",
+    gradientFrom: "accent-pink-color",
+    gradientTo: "accent-blue-color",
+    backgroundOrigin: "border-box",
+} as const;
+
 export const card = {
     layerStyle: "card",
     flexDir: "column",

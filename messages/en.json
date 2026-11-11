@@ -37,16 +37,28 @@
     },
     "portfolio": {
         "title": "Portfolio",
+        "builtTitle": "What I built",
         "live": "Live demo",
-        "code": "Code",
         "video": "Demo video",
+        "gallery": {
+            "previous": "Previous screenshot",
+            "next": "Next screenshot",
+            "close": "Close"
+        },
         "salesAssistant": {
             "title": "Sales Assistant",
-            "text": "An online store with an AI chat assistant for store employees. An internal training project at Columbus.",
-            "contributionTitle": "My contribution",
+            "text": "The main feature is an AI assistant that helps a salesperson find the right product by voice or text.",
             "items": {
-                "assistant": "Sales Assistant: an AI chat assistant that helps store employees recommend products to customers. I built the frontend: voice recognition (Web Speech API), the chat interface with keyword tags and product grid, session history with restored scroll position, loading and error states.",
-                "store": "Online store (commercetools): the product page, the cart (commercetools + Context API + useActionState + Server Actions), an anonymous cart for guests that merges with the customer cart after sign-in, and a multi-step checkout."
+                "voice": "Voice recognition",
+                "chat": "Chat with dedicated logic, behavior, and error handling",
+                "pdp": "Product page (PDP)",
+                "cart": "Cart and Anonymous cart (integrated with commercetools)",
+                "footer": "Footer"
+            },
+            "screens": {
+                "voice": "Voice",
+                "chat": "Chat results",
+                "product": "Product page"
             }
         },
         "houseStaff": {
