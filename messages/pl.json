@@ -1,85 +1,105 @@
 {
-    "logoTitle": "Nadiia Lezhanska",
-    "meta": {
-        "title": "Nadiia Lezhanska | Frontend Developer",
-        "description": "Sprawdź moje portfolio: projekty frontendowe w React, Next.js i Angularze."
+  "logoTitle": "Nadiia Lezhanska",
+  "meta": {
+    "title": "Nadiia Lezhanska | Frontend Developer",
+    "description": "Sprawdź moje portfolio: projekty frontendowe w React, Next.js i Angularze."
+  },
+  "nav": {
+    "about": "Co robię",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "role": "Frontend Developer",
+    "intro": "Hej! Mam na imię Nadiia, jestem frontend developerką. Lubię pisać czysty kod, ograniczać zbędne zależności i tworzyć intuicyjne interfejsy.",
+    "cta": "Napisz do mnie",
+    "cv": "Pobierz CV"
+  },
+  "services": {
+    "title": "Co potrafię",
+    "frontend": {
+      "title": "Tworzenie frontendu",
+      "text": "Buduję aplikacje webowe w React, Next.js, Angular i TypeScript, z czystym kodem i minimum zależności."
     },
-    "nav": {
-        "about": "Co robię",
-        "portfolio": "Portfolio",
-        "contact": "Kontakt"
+    "responsive": {
+      "title": "Responsywny i dostępny interfejs",
+      "text": "Tworzę interfejsy, które dobrze działają na komputerze, tablecie i telefonie, z naciskiem na wygodę użytkownika."
     },
-    "hero": {
-        "role": "Frontend Developer",
-        "intro": "Hej! Mam na imię Nadiia, jestem frontend developerką. Lubię pisać czysty kod, ograniczać zbędne zależności i tworzyć intuicyjne interfejsy.",
-        "cta": "Napisz do mnie",
-        "cv": "Pobierz CV"
-    },
-    "services": {
-        "title": "Co potrafię",
-        "frontend": {
-            "title": "Tworzenie frontendu",
-            "text": "Buduję aplikacje webowe w React, Next.js, Angular i TypeScript, z czystym kodem i minimum zależności."
-        },
-        "responsive": {
-            "title": "Responsywny i dostępny interfejs",
-            "text": "Tworzę interfejsy, które dobrze działają na komputerze, tablecie i telefonie, z naciskiem na wygodę użytkownika."
-        },
-        "testing": {
-            "title": "Testy i dokumentacja",
-            "text": "Piszę testy komponentów, e2e (Vitest, React Testing Library, Cypress) oraz dokumentuję komponenty w Storybooku."
-        }
-    },
-    "skills": {
-        "title": "Umiejętności i narzędzia",
-        "text": "Umiejętności, narzędzia i technologie, których używam:"
-    },
-    "portfolio": {
-        "eyebrow": "Portfolio",
-        "title": "Projekty",
-        "builtTitle": "Co zrobiłam",
-        "live": "Przejdź do dema",
-        "video": "Wideo z działania",
-        "gallery": {
-            "previous": "Poprzedni zrzut ekranu",
-            "next": "Następny zrzut ekranu",
-            "close": "Zamknij"
-        },
-        "salesAssistant": {
-            "title": "Sales Assistant",
-            "text": "Asystent, który pomaga sprzedawcy znaleźć odpowiedni produkt, głosowo lub tekstowo.",
-            "items": {
-                "voice": "Rozpoznawanie mowy",
-                "chat": "Czat z wynikami produktów",
-                "pdp": "Strona produktu (PDP)",
-                "cart": "Koszyk i checkout",
-                "anonymousCart": "Anonimowy koszyk z commercetools",
-                "footer": "Stopka"
-            },
-            "screens": {
-                "voice": "Głos",
-                "chat": "Wyniki czatu",
-                "product": "Strona produktu"
-            }
-        },
-        "houseStaff": {
-            "title": "House Staff",
-            "text": "Sklep internetowy z koszykiem i listą życzeń dla gości i zalogowanych użytkowników, logowaniem przez Google i składaniem zamówień przez REST API w Node/Express. Responsywny interfejs z code splittingiem, testami komponentów i dokumentacją w Storybooku."
-        }
-    },
-    "contact": {
-        "title": "Kontakt",
-        "text": "Jestem otwarta na nowe propozycje pracy i ciekawe projekty.",
-        "contactDataTitle": "Kontakt",
-        "socialMediaTitle": "Social media",
-        "contactData": {
-            "phone": "+48 577 736 858",
-            "email": "nadiialezhanska@gmail.com",
-            "location": "Wrocław, Polska"
-        },
-        "socialMedia": {
-            "github": "https://github.com/nadia-dot-com",
-            "linkedin": "https://www.linkedin.com/in/nadiia-lezhanska"
-        }
+    "testing": {
+      "title": "Testy i dokumentacja",
+      "text": "Piszę testy komponentów, e2e (Vitest, React Testing Library, Cypress) oraz dokumentuję komponenty w Storybooku."
     }
+  },
+  "skills": {
+    "title": "Umiejętności i narzędzia",
+    "text": "Umiejętności, narzędzia i technologie, których używam:"
+  },
+  "portfolio": {
+    "eyebrow": "Portfolio",
+    "title": "Projekty",
+    "live": "Przejdź do dema",
+    "video": "Wideo z działania",
+    "gallery": {
+      "previous": "Poprzedni zrzut ekranu",
+      "next": "Następny zrzut ekranu",
+      "close": "Zamknij"
+    },
+    "salesAssistant": {
+      "title": "Sales Assistant",
+      "featuresTitle": "Co zrobiłam",
+      "text": "Asystent, który pomaga sprzedawcy znaleźć odpowiedni produkt, głosowo lub tekstowo.",
+      "items": {
+        "voice": "Rozpoznawanie mowy",
+        "chat": "Czat z wynikami produktów",
+        "pdp": "Strona produktu (PDP)",
+        "cart": "Koszyk i checkout",
+        "anonymousCart": "Anonimowy koszyk z commercetools",
+        "footer": "Stopka"
+      },
+      "screens": {
+        "voice": "Głos",
+        "chat": "Wyniki czatu",
+        "product": "Strona produktu"
+      }
+    },
+    "houseStaff": {
+      "title": "House Staff",
+      "text": "Sklep z meblami z pełnym procesem zakupowym, od przeglądania produktów po złożenie zamówienia.",
+      "featuresTitle": "Główne funkcje",
+      "items": {
+        "wishlist": "Lista życzeń dla gości i zalogowanych użytkowników",
+        "cart": "Koszyk dla gości i zalogowanych użytkowników",
+        "checkout": "Składanie zamówienia i historia zamówień",
+        "auth": "Logowanie przez Google",
+        "account": "Konto użytkownika z profilem, zamówieniami i listą życzeń",
+        "state": "Zarządzanie stanem przez useReducer i Context",
+        "server": "Pobieranie danych przez TanStack Query, ze stanami ładowania i błędów",
+        "storybook": "Komponenty UI opisane w Storybooku",
+        "tests": "Testy jednostkowe i komponentowe w Vitest"
+      },
+      "screens": {
+        "cart": "Koszyk",
+        "collection": "Kolekcja",
+        "contact": "Kontakt",
+        "orders": "Zamówienia",
+        "products": "Produkty",
+        "wishlist": "Lista życzeń"
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "text": "Jestem otwarta na nowe propozycje pracy i ciekawe projekty.",
+    "contactDataTitle": "Kontakt",
+    "socialMediaTitle": "Social media",
+    "contactData": {
+      "phone": "+48 577 736 858",
+      "email": "nadiialezhanska@gmail.com",
+      "location": "Wrocław, Polska"
+    },
+    "socialMedia": {
+      "github": "https://github.com/nadia-dot-com",
+      "linkedin": "https://www.linkedin.com/in/nadiia-lezhanska"
+    }
+  }
 }

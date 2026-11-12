@@ -22,9 +22,9 @@ import tailwind from "@iconify-icons/logos/tailwindcss-icon";
 import testingLibrary from "@iconify-icons/logos/testing-library";
 import typescript from "@iconify-icons/logos/typescript-icon";
 import vitest from "@iconify-icons/logos/vitest";
-import { SymbolIcon } from "@/components/SymbolIcon/SymbolIcon";
 import { getTranslations } from "next-intl/server";
 import { Section } from "@/components/Section/Section";
+import { SymbolIcon } from "@/components/SymbolIcon/SymbolIcon";
 import { styles } from "./Skills.styles";
 
 const skills = [
@@ -59,9 +59,7 @@ export async function Skills() {
   return (
     <Section title={t("skills.title")} id="skills">
       <Flex {...styles.content}>
-        <Text {...styles.intro}>
-          {t("skills.text")}
-        </Text>
+        <Text {...styles.intro}>{t("skills.text")}</Text>
         <List.Root aria-label={t("skills.title")} {...styles.list}>
           {skills.map(({ name, icon, invert }) => (
             <List.Item key={name}>

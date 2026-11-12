@@ -1,85 +1,105 @@
 {
-    "logoTitle": "Nadiia Lezhanska",
-    "meta": {
-        "title": "Надія Лежанська | Frontend Developer",
-        "description": "Перегляньте моє портфоліо: фронтенд-проєкти на React, Next.js та Angular."
+  "logoTitle": "Nadiia Lezhanska",
+  "meta": {
+    "title": "Надія Лежанська | Frontend Developer",
+    "description": "Перегляньте моє портфоліо: фронтенд-проєкти на React, Next.js та Angular."
+  },
+  "nav": {
+    "about": "Як я працюю",
+    "portfolio": "Портфоліо",
+    "contact": "Контакти"
+  },
+  "hero": {
+    "role": "Frontend Developer",
+    "intro": "Привіт! Я Надія, фронтенд-розробниця. Люблю чистий код, мінімум залежностей та інтуїтивно зрозумілі й зручні інтерфейси.",
+    "cta": "Написати мені",
+    "cv": "Завантажити CV"
+  },
+  "services": {
+    "title": "Що я вмію",
+    "frontend": {
+      "title": "Фронтенд-розробка",
+      "text": "Будую вебзастосунки на React, Next.js, Angular і TypeScript, з чистим кодом і мінімумом залежностей."
     },
-    "nav": {
-        "about": "Як я працюю",
-        "portfolio": "Портфоліо",
-        "contact": "Контакти"
+    "responsive": {
+      "title": "Адаптивний і доступний інтерфейс",
+      "text": "Роблю інтерфейси, які добре працюють на комп'ютері, планшеті й телефоні, з акцентом на зручність користувача."
     },
-    "hero": {
-        "role": "Frontend Developer",
-        "intro": "Привіт! Я Надія, фронтенд-розробниця. Люблю чистий код, мінімум залежностей та інтуїтивно зрозумілі й зручні інтерфейси.",
-        "cta": "Написати мені",
-        "cv": "Завантажити CV"
-    },
-    "services": {
-        "title": "Що я вмію",
-        "frontend": {
-            "title": "Фронтенд-розробка",
-            "text": "Будую вебзастосунки на React, Next.js, Angular і TypeScript, з чистим кодом і мінімумом залежностей."
-        },
-        "responsive": {
-            "title": "Адаптивний і доступний інтерфейс",
-            "text": "Роблю інтерфейси, які добре працюють на комп'ютері, планшеті й телефоні, з акцентом на зручність користувача."
-        },
-        "testing": {
-            "title": "Тести й документація",
-            "text": "Пишу тести компонентів та e2e (Vitest, React Testing Library, Cypress) і документую компоненти в Storybook."
-        }
-    },
-    "skills": {
-        "title": "Навички та інструменти",
-        "text": "Навички, інструменти та технології, які я використовую:"
-    },
-    "portfolio": {
-        "eyebrow": "Портфоліо",
-        "title": "Проєкти",
-        "builtTitle": "Що я зробила",
-        "live": "Перейти до демо",
-        "video": "Відео роботи",
-        "gallery": {
-            "previous": "Попередній скріншот",
-            "next": "Наступний скріншот",
-            "close": "Закрити"
-        },
-        "salesAssistant": {
-            "title": "Sales Assistant",
-            "text": "Асистент, який допомагає продавцю знайти потрібний товар голосом або текстом.",
-            "items": {
-                "voice": "Розпізнавання мови",
-                "chat": "Чат з результатами товарів",
-                "pdp": "Сторінка товару (PDP)",
-                "cart": "Кошик і чекаут",
-                "anonymousCart": "Анонімний кошик із commercetools",
-                "footer": "Футер"
-            },
-            "screens": {
-                "voice": "Голос",
-                "chat": "Результати чату",
-                "product": "Сторінка товару"
-            }
-        },
-        "houseStaff": {
-            "title": "House Staff",
-            "text": "Інтернет-магазин з кошиком і списком бажань для гостей та авторизованих користувачів, входом через Google та оформленням замовлень через REST API на Node/Express. Адаптивний інтерфейс із code splitting, тестами компонентів і документацією в Storybook."
-        }
-    },
-    "contact": {
-        "title": "Контакти",
-        "text": "Я відкрита до нових пропозицій роботи та цікавих проєктів.",
-        "contactDataTitle": "Контакти",
-        "socialMediaTitle": "Соціальні мережі",
-        "contactData": {
-            "phone": "+48 577 736 858",
-            "email": "nadiialezhanska@gmail.com",
-            "location": "Вроцлав, Польща"
-        },
-        "socialMedia": {
-            "github": "https://github.com/nadia-dot-com",
-            "linkedin": "https://www.linkedin.com/in/nadiia-lezhanska"
-        }
+    "testing": {
+      "title": "Тести й документація",
+      "text": "Пишу тести компонентів та e2e (Vitest, React Testing Library, Cypress) і документую компоненти в Storybook."
     }
+  },
+  "skills": {
+    "title": "Навички та інструменти",
+    "text": "Навички, інструменти та технології, які я використовую:"
+  },
+  "portfolio": {
+    "eyebrow": "Портфоліо",
+    "title": "Проєкти",
+    "live": "Перейти до демо",
+    "video": "Відео роботи",
+    "gallery": {
+      "previous": "Попередній скріншот",
+      "next": "Наступний скріншот",
+      "close": "Закрити"
+    },
+    "salesAssistant": {
+      "title": "Sales Assistant",
+      "featuresTitle": "Що я зробила",
+      "text": "Асистент, який допомагає продавцю знайти потрібний товар голосом або текстом.",
+      "items": {
+        "voice": "Розпізнавання мови",
+        "chat": "Чат з результатами товарів",
+        "pdp": "Сторінка товару (PDP)",
+        "cart": "Кошик і чекаут",
+        "anonymousCart": "Анонімний кошик із commercetools",
+        "footer": "Футер"
+      },
+      "screens": {
+        "voice": "Голос",
+        "chat": "Результати чату",
+        "product": "Сторінка товару"
+      }
+    },
+    "houseStaff": {
+      "title": "House Staff",
+      "text": "Інтернет-магазин з кошиком і списком бажань для гостей та авторизованих користувачів, входом через Google та оформленням замовлень через REST API на Node/Express. Адаптивний інтерфейс із code splitting, тестами компонентів і документацією в Storybook.",
+      "featuresTitle": "Головні функції",
+      "items": {
+        "wishlist": "Список бажань для гостей і залогінених користувачів",
+        "cart": "Кошик для гостей і залогінених користувачів",
+        "checkout": "Оформлення замовлення та історія замовлень",
+        "auth": "Вхід через Google",
+        "account": "Акаунт користувача з профілем, замовленнями та списком бажань",
+        "state": "Керування станом через useReducer і Context",
+        "server": "Завантаження даних через TanStack Query зі станами завантаження й помилок",
+        "storybook": "UI-компоненти задокументовані в Storybook",
+        "tests": "Юніт- та компонентні тести у Vitest"
+      },
+      "screens": {
+        "cart": "Кошик",
+        "collection": "Колекція",
+        "contact": "Контакти",
+        "orders": "Замовлення",
+        "products": "Товари",
+        "wishlist": "Список бажань"
+      }
+    }
+  },
+  "contact": {
+    "title": "Контакти",
+    "text": "Я відкрита до нових пропозицій роботи та цікавих проєктів.",
+    "contactDataTitle": "Контакти",
+    "socialMediaTitle": "Соціальні мережі",
+    "contactData": {
+      "phone": "+48 577 736 858",
+      "email": "nadiialezhanska@gmail.com",
+      "location": "Вроцлав, Польща"
+    },
+    "socialMedia": {
+      "github": "https://github.com/nadia-dot-com",
+      "linkedin": "https://www.linkedin.com/in/nadiia-lezhanska"
+    }
+  }
 }

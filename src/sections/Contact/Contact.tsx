@@ -4,13 +4,17 @@ import linkedinOutline from "@iconify-icons/tabler/brand-linkedin";
 import mail from "@iconify-icons/tabler/mail";
 import mapPin from "@iconify-icons/tabler/map-pin";
 import phone from "@iconify-icons/tabler/phone";
-import { SymbolIcon } from "@/components/SymbolIcon/SymbolIcon";
 import { getTranslations } from "next-intl/server";
-import { styles } from "./Contact.styles";
 import { Section } from "@/components/Section/Section";
+import { SymbolIcon } from "@/components/SymbolIcon/SymbolIcon";
+import { styles } from "./Contact.styles";
 
 const contactData = [
-  { key: "phone", icon: phone, href: (value: string) => `tel:${value.replaceAll(" ", "")}` },
+  {
+    key: "phone",
+    icon: phone,
+    href: (value: string) => `tel:${value.replaceAll(" ", "")}`,
+  },
   { key: "email", icon: mail, href: (value: string) => `mailto:${value}` },
   { key: "location", icon: mapPin },
 ];

@@ -12,6 +12,8 @@ const glassButton = {
 
 export const styles = {
   screens: {
+    display: "grid",
+    gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
     gap: { base: 2, md: 3 },
   },
   screen: {

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Nunito_Sans, Manrope } from "next/font/google";
+import { Manrope, Nunito_Sans } from "next/font/google";
 import "./globals.css";
-import { NextIntlClientProvider } from "next-intl";
 import { Flex } from "@chakra-ui/react";
+import { NextIntlClientProvider } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { styles } from "@/app/[locale]/layout.styles";
 import { Header } from "@/components/Header/Header";
 import { Provider } from "@/components/Provider/Provider";
 import { routing } from "@/i18n/routing";
-import { styles } from "@/app/[locale]/layout.styles";
-import { getTranslations } from "next-intl/server";
 
 const nunitoSans = Nunito_Sans({
   variable: "--font-nunito-sans",
@@ -23,7 +23,9 @@ export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations();
 
   return {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3001"),
+    metadataBase: new URL(
+      process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3001",
+    ),
     title: t("meta.title"),
     description: t("meta.description"),
 
@@ -33,19 +35,19 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: t("logoTitle"),
       images: [
         {
-          url: "/og-image.png"
-        }
+          url: "/images/og-image.png",
+        },
       ],
-      type: "website"
+      type: "website",
     },
 
     twitter: {
       card: "summary_large_image",
       title: t("meta.title"),
       description: t("meta.description"),
-      images: ["/og-image.png"]
-    }
-  }
+      images: ["/images/og-image.png"],
+    },
+  };
 }
 
 export function generateStaticParams() {

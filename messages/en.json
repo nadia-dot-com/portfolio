@@ -1,83 +1,103 @@
 {
-    "logoTitle": "Nadiia Lezhanska",
-    "meta": {
-        "title": "Nadiia Lezhanska | Frontend Developer",
-        "description": "Check out my portfolio: frontend projects built with React, Next.js and Angular."
+  "logoTitle": "Nadiia Lezhanska",
+  "meta": {
+    "title": "Nadiia Lezhanska | Frontend Developer",
+    "description": "Check out my portfolio: frontend projects built with React, Next.js and Angular."
+  },
+  "nav": {
+    "services": "How I work",
+    "portfolio": "Portfolio",
+    "skillsAndTools": "Skills & Tools",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "Frontend Developer",
+    "intro": "I’m Nadiia, a frontend developer. I like clean code, fewer dependencies and interfaces that feel obvious to use.",
+    "cta": "Contact me",
+    "cv": "Download CV"
+  },
+  "services": {
+    "title": "What I can do",
+    "frontend": {
+      "title": "Frontend development",
+      "text": "I build web applications with React, Next.js, Angular and TypeScript, with clean code and minimal dependencies."
     },
-    "nav": {
-        "services": "How I work",
-        "portfolio": "Portfolio",
-        "skillsAndTools": "Skills & Tools",
-        "contact": "Contact"
+    "responsive": {
+      "title": "Responsive and accessible UI",
+      "text": "I make interfaces that work smoothly on desktop, tablet and mobile, with user-friendly design."
     },
-    "hero": {
-        "role": "Frontend Developer",
-        "intro": "I’m Nadiia, a frontend developer. I like clean code, fewer dependencies and interfaces that feel obvious to use.",
-        "cta": "Contact me",
-        "cv": "Download CV"
-    },
-    "services": {
-        "title": "What I can do",
-        "frontend": {
-            "title": "Frontend development",
-            "text": "I build web applications with React, Next.js, Angular and TypeScript, with clean code and minimal dependencies."
-        },
-        "responsive": {
-            "title": "Responsive and accessible UI",
-            "text": "I make interfaces that work smoothly on desktop, tablet and mobile, with user-friendly design."
-        },
-        "testing": {
-            "title": "Testing and documentation",
-            "text": "I write component and e2e tests (Vitest, React Testing Library, Cypress) and document components in Storybook."
-        }
-    },
-    "skills": {
-        "title": "Skills & tools",
-        "text": "The skills, tools and technologies I use:"
-    },
-    "portfolio": {
-        "title": "Portfolio",
-        "builtTitle": "What I built",
-        "live": "Live demo",
-        "video": "Demo video",
-        "gallery": {
-            "previous": "Previous screenshot",
-            "next": "Next screenshot",
-            "close": "Close"
-        },
-        "salesAssistant": {
-            "title": "Sales Assistant",
-            "text": "The main feature is an AI assistant that helps a salesperson find the right product by voice or text.",
-            "items": {
-                "voice": "Voice recognition",
-                "chat": "Chat with dedicated logic, behavior, and error handling",
-                "pdp": "Product page (PDP)",
-                "cart": "Cart and Anonymous cart (integrated with commercetools)",
-                "footer": "Footer"
-            },
-            "screens": {
-                "voice": "Voice",
-                "chat": "Chat results",
-                "product": "Product page"
-            }
-        },
-        "houseStaff": {
-            "title": "House Staff",
-            "text": "An e-commerce storefront with a cart and wishlist for guests and signed-in users, Google sign-in and order placement through a Node/Express REST API. Responsive UI with code splitting, component tests and Storybook documentation."
-        }
-    },
-    "contact": {
-        "title": "I'm open to new job opportunities and interesting projects.",
-        "contactDataTitle": "Contact",
-        "contactData": {
-            "phone": "+48 577 736 858",
-            "email": "nadiialezhanska@gmail.com",
-            "location": "Wrocław, Poland"
-        },
-        "socialMediaTitle": "Social Media",
-        "socialMedia": {
-            "github": "https://github.com/nadia-dot-com",
-            "linkedin": "https://www.linkedin.com/in/nadiia-lezhanska"
-        }
+    "testing": {
+      "title": "Testing and documentation",
+      "text": "I write component and e2e tests (Vitest, React Testing Library, Cypress) and document components in Storybook."
     }
+  },
+  "skills": {
+    "title": "Skills & tools",
+    "text": "The skills, tools and technologies I use:"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "live": "Live demo",
+    "video": "Demo video",
+    "gallery": {
+      "previous": "Previous screenshot",
+      "next": "Next screenshot",
+      "close": "Close"
+    },
+    "salesAssistant": {
+      "title": "Sales Assistant",
+      "featuresTitle": "What I built",
+      "text": "The main feature is an AI assistant that helps a salesperson find the right product by voice or text.",
+      "items": {
+        "voice": "Voice recognition",
+        "chat": "Chat with dedicated logic, behavior, and error handling",
+        "pdp": "Product page (PDP)",
+        "cart": "Cart and Anonymous cart (integrated with commercetools)",
+        "footer": "Footer"
+      },
+      "screens": {
+        "voice": "Voice",
+        "chat": "Chat results",
+        "product": "Product page"
+      }
+    },
+    "houseStaff": {
+      "title": "House Staff",
+      "text": "A furniture store with the full shopping flow, from browsing products to placing an order.",
+      "featuresTitle": "Main features",
+      "items": {
+        "wishlist": "Wishlist for guests and logged-in users",
+        "cart": "Shopping cart for guests and logged-in users",
+        "checkout": "Checkout and order history",
+        "auth": "Sign in with Google",
+        "account": "User account with profile, orders and wishlist",
+        "state": "State management with useReducer and Context",
+        "server": "Data loading with TanStack Query, with loading and error states",
+        "storybook": "UI components documented in Storybook",
+        "tests": "Unit and component tests with Vitest"
+      },
+      "screens": {
+        "cart": "Cart",
+        "collection": "Collection",
+        "contact": "Contact",
+        "orders": "Orders",
+        "products": "Products",
+        "wishlist": "Wishlist"
+      }
+    }
+  },
+  "contact": {
+    "title": "I'm open to new job opportunities and interesting projects.",
+    "contactDataTitle": "Contact",
+    "contactData": {
+      "phone": "+48 577 736 858",
+      "email": "nadiialezhanska@gmail.com",
+      "location": "Wrocław, Poland"
+    },
+    "socialMediaTitle": "Social Media",
+    "socialMedia": {
+      "github": "https://github.com/nadia-dot-com",
+      "linkedin": "https://www.linkedin.com/in/nadiia-lezhanska"
+    }
+  }
 }

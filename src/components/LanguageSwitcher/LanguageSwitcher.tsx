@@ -53,7 +53,11 @@ export function LanguageSwitcher() {
         <Select.Positioner>
           <Select.Content {...styles.content}>
             {languages.items.map((language) => (
-              <Select.Item item={language} key={language.value} {...styles.item}>
+              <Select.Item
+                item={language}
+                key={language.value}
+                {...styles.item}
+              >
                 {language.label}
                 <ReactCountryFlag
                   countryCode={language.countryCode}

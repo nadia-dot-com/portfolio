@@ -13,7 +13,7 @@ export const positioning = { placement: "bottom-end" } as const;
 export const styles = {
   select: {
     width: "4.5em",
-    justifySelf: "flex-end"
+    justifySelf: "flex-end",
   },
   trigger: {
     paddingX: 3,

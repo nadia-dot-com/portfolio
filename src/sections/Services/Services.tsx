@@ -20,10 +20,7 @@ export async function Services() {
         {services.map(({ key, icon: ServiceIcon }, index) => (
           <Fragment key={key}>
             {index > 0 && <Box {...styles.connector} />}
-            <Flex
-              {...styles.card}
-              {...(index % 2 === 1 && styles.cardRight)}
-            >
+            <Flex {...styles.card} {...(index % 2 === 1 && styles.cardRight)}>
               <Flex {...styles.header}>
                 <Icon {...styles.icon}>
                   <ServiceIcon />
@@ -32,9 +29,7 @@ export async function Services() {
                   {t(`services.${key}.title`)}
                 </Heading>
               </Flex>
-              <Text textStyle="bodyText">
-                {t(`services.${key}.text`)}
-              </Text>
+              <Text textStyle="bodyText">{t(`services.${key}.text`)}</Text>
             </Flex>
           </Fragment>
         ))}

@@ -1,21 +1,20 @@
-import * as rootParams from 'next/root-params';
+import { notFound } from "next/navigation";
+import * as rootParams from "next/root-params";
+import { hasLocale } from "next-intl";
 import { getRequestConfig } from "next-intl/server";
-import { hasLocale } from 'next-intl';
-import { routing } from '@/i18n/routing';
-import { notFound } from 'next/navigation';
+import { routing } from "@/i18n/routing";
 
-export default getRequestConfig(async ({locale}) => {
-    if(!locale) {
-        const paramValue = await rootParams.locale();
-        if(hasLocale(routing.locales, paramValue)) {
-            locale = paramValue;
-        } else {
-            notFound();
-        }
-        
+export default getRequestConfig(async ({ locale }) => {
+  if (!locale) {
+    const paramValue = await rootParams.locale();
+    if (hasLocale(routing.locales, paramValue)) {
+      locale = paramValue;
+    } else {
+      notFound();
     }
-    return {
-        locale,
-        messages: (await import(`../../messages/${locale}.json`)).default
-    };
+  }
+  return {
+    locale,
+    messages: (await import(`../../messages/${locale}.json`)).default,
+  };
 });
