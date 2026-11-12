@@ -40,6 +40,7 @@ export function LanguageSwitcher() {
             <ReactCountryFlag
               countryCode={selectedLanguage?.countryCode ?? "GB"}
               svg
+              alt={selectedLanguage?.label}
               aria-label={selectedLanguage?.label}
               style={flagStyle}
             />
@@ -62,6 +63,7 @@ export function LanguageSwitcher() {
                 <ReactCountryFlag
                   countryCode={language.countryCode}
                   svg
+                  alt=""
                   aria-hidden="true"
                   style={flagStyle}
                 />

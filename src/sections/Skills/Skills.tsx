@@ -57,10 +57,10 @@ export async function Skills() {
   const t = await getTranslations();
 
   return (
-    <Section title={t("skills.title")} id="skills">
+    <Section title={t("tools.title")} id="skills">
       <Flex {...styles.content}>
-        <Text {...styles.intro}>{t("skills.text")}</Text>
-        <List.Root aria-label={t("skills.title")} {...styles.list}>
+        <Text {...styles.intro}>{t("tools.text")}</Text>
+        <List.Root aria-label={t("tools.title")} {...styles.list}>
           {skills.map(({ name, icon, invert }) => (
             <List.Item key={name}>
               <Icon

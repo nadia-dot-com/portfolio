@@ -3,7 +3,7 @@ import { Manrope, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import { Flex } from "@chakra-ui/react";
 import { NextIntlClientProvider } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { styles } from "@/app/[locale]/layout.styles";
 import { Header } from "@/components/Header/Header";
 import { Provider } from "@/components/Provider/Provider";
@@ -54,9 +54,16 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export default function RootLayout({ children }: LayoutProps<"/[locale]">) {
+export default async function RootLayout({
+  children,
+}: LayoutProps<"/[locale]">) {
+  const locale = await getLocale();
+
   return (
-    <html lang="en" className={`${nunitoSans.variable} ${manrope.variable}`}>
+    <html
+      lang={locale}
+      className={`${nunitoSans.variable} ${manrope.variable}`}
+    >
       <body>
         <NextIntlClientProvider>
           <Provider>

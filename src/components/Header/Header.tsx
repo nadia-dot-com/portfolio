@@ -13,9 +13,9 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { id: "services", label: t("nav.services") },
-    { id: "portfolio", label: t("nav.portfolio") },
-    { id: "skills", label: t("nav.skillsAndTools") },
+    { id: "projects", label: t("projects.title") },
+    { id: "skills", label: t("tools.title") },
+    { id: "services", label: t("services.title") },
     { id: "contact", label: t("nav.contact") },
   ];
 

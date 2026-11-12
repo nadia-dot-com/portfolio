@@ -5,19 +5,16 @@
     "description": "Check out my portfolio: frontend projects built with React, Next.js and Angular."
   },
   "nav": {
-    "services": "How I work",
-    "portfolio": "Portfolio",
-    "skillsAndTools": "Skills & Tools",
     "contact": "Contact"
   },
   "hero": {
     "role": "Frontend Developer",
-    "intro": "I’m Nadiia, a frontend developer. I like clean code, fewer dependencies and interfaces that feel obvious to use.",
+    "intro": "I’m Nadiia, a frontend developer with commercial experience in building modern web applications using React, Next.js, Angular and TypeScript. I like clean code, fewer dependencies and interfaces that feel obvious to use.",
     "cta": "Contact me",
     "cv": "Download CV"
   },
   "services": {
-    "title": "What I can do",
+    "title": "What I do",
     "frontend": {
       "title": "Frontend development",
       "text": "I build web applications with React, Next.js, Angular and TypeScript, with clean code and minimal dependencies."
@@ -31,12 +28,12 @@
       "text": "I write component and e2e tests (Vitest, React Testing Library, Cypress) and document components in Storybook."
     }
   },
-  "skills": {
+  "tools": {
     "title": "Skills & tools",
-    "text": "The skills, tools and technologies I use:"
+    "text": "The skills and tools, I use:"
   },
-  "portfolio": {
-    "title": "Portfolio",
+  "projects": {
+    "title": "Projects",
     "live": "Live demo",
     "video": "Demo video",
     "gallery": {
@@ -47,18 +44,21 @@
     "salesAssistant": {
       "title": "Sales Assistant",
       "featuresTitle": "What I built",
-      "text": "The main feature is an AI assistant that helps a salesperson find the right product by voice or text.",
+      "text": "AI assistant that helps a salesperson find the right product by voice or text.",
       "items": {
         "voice": "Voice recognition",
-        "chat": "Chat with dedicated logic, behavior, and error handling",
+        "chat": "AI chat with session history, match tags and error handling",
         "pdp": "Product page (PDP)",
-        "cart": "Cart and Anonymous cart (integrated with commercetools)",
-        "footer": "Footer"
+        "cart": "Guest and user cart (integrated with commercetools)",
+        "i18n": "Multi-language support with translations fetched from Sanity CMS"
       },
       "screens": {
         "voice": "Voice",
         "chat": "Chat results",
-        "product": "Product page"
+        "product": "Product page",
+        "popover": "Mini cart",
+        "cart": "Cart",
+        "checkout": "Checkout"
       }
     },
     "houseStaff": {
@@ -66,15 +66,10 @@
       "text": "A furniture store with the full shopping flow, from browsing products to placing an order.",
       "featuresTitle": "Main features",
       "items": {
-        "wishlist": "Wishlist for guests and logged-in users",
-        "cart": "Shopping cart for guests and logged-in users",
+        "wishlist": "Wishlist and cart for guests and logged-in users",
         "checkout": "Checkout and order history",
-        "auth": "Sign in with Google",
-        "account": "User account with profile, orders and wishlist",
-        "state": "State management with useReducer and Context",
-        "server": "Data loading with TanStack Query, with loading and error states",
-        "storybook": "UI components documented in Storybook",
-        "tests": "Unit and component tests with Vitest"
+        "auth": "Google sign-in and user account",
+        "state": "State management with useReducer and Context"
       },
       "screens": {
         "cart": "Cart",

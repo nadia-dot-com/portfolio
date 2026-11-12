@@ -46,14 +46,14 @@ export async function Project({
           <Box {...styles.dot} />
         </Flex>
         <AspectRatio ratio={16 / 9}>
-          <iframe title={t("portfolio.video")} src={video} allowFullScreen />
+          <iframe title={t("projects.video")} src={video} allowFullScreen />
         </AspectRatio>
         {screens.length > 0 && (
           <ScreenGallery
             screens={screens.map(({ key, src }) => ({
               key,
               src,
-              label: t(`portfolio.${id}.screens.${key}`),
+              label: t(`projects.${id}.screens.${key}`),
             }))}
           />
         )}
@@ -61,18 +61,18 @@ export async function Project({
 
       <Flex {...styles.info}>
         <Heading as="h3" {...styles.projectTitle}>
-          {t(`portfolio.${id}.title`)}
+          {t(`projects.${id}.title`)}
         </Heading>
-        <Text {...styles.text}>{t(`portfolio.${id}.text`)}</Text>
+        <Text {...styles.text}>{t(`projects.${id}.text`)}</Text>
         <Flex {...styles.itemsContainer}>
-          <Text {...styles.label}>{t(`portfolio.${id}.featuresTitle`)}</Text>
+          <Text {...styles.label}>{t(`projects.${id}.featuresTitle`)}</Text>
           <List.Root {...styles.list}>
             {items.map(({ key, icon: ItemIcon }) => (
               <List.Item key={key} {...styles.listItem}>
                 <Icon {...styles.itemIcon}>
                   <ItemIcon />
                 </Icon>
-                {t(`portfolio.${id}.items.${key}`)}
+                {t(`projects.${id}.items.${key}`)}
               </List.Item>
             ))}
           </List.Root>
@@ -89,7 +89,7 @@ export async function Project({
             {liveUrl && (
               <Button asChild {...styles.button}>
                 <NextLink href={liveUrl}>
-                  {t("portfolio.live")}
+                  {t("projects.live")}
                   <Icon>
                     <ArrowUpRight />
                   </Icon>

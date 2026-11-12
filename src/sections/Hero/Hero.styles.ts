@@ -3,6 +3,7 @@ import { button, gradientText, sectionBase } from "@/components/shared.styles";
 
 export const styles = {
   root: {
+    height: "90dvh",
     ...sectionBase,
     justifyContent: "space-between",
     clipPath: "inset(0 -100vh 0 -100vw)",

@@ -5,18 +5,16 @@
     "description": "Sprawdź moje portfolio: projekty frontendowe w React, Next.js i Angularze."
   },
   "nav": {
-    "about": "Co robię",
-    "portfolio": "Portfolio",
     "contact": "Kontakt"
   },
   "hero": {
     "role": "Frontend Developer",
-    "intro": "Hej! Mam na imię Nadiia, jestem frontend developerką. Lubię pisać czysty kod, ograniczać zbędne zależności i tworzyć intuicyjne interfejsy.",
+    "intro": "Nazywam się Nadiia i jestem frontend developerką z komercyjnym doświadczeniem w tworzeniu nowoczesnych aplikacji webowych z wykorzystaniem React, Next.js, Angular i TypeScript. Cenię czysty kod, minimalną liczbę zależności oraz intuicyjne interfejsy.",
     "cta": "Napisz do mnie",
     "cv": "Pobierz CV"
   },
   "services": {
-    "title": "Co potrafię",
+    "title": "Czym się zajmuję",
     "frontend": {
       "title": "Tworzenie frontendu",
       "text": "Buduję aplikacje webowe w React, Next.js, Angular i TypeScript, z czystym kodem i minimum zależności."
@@ -30,12 +28,11 @@
       "text": "Piszę testy komponentów, e2e (Vitest, React Testing Library, Cypress) oraz dokumentuję komponenty w Storybooku."
     }
   },
-  "skills": {
+  "tools": {
     "title": "Umiejętności i narzędzia",
-    "text": "Umiejętności, narzędzia i technologie, których używam:"
+    "text": "Narzędzia, których używam:"
   },
-  "portfolio": {
-    "eyebrow": "Portfolio",
+  "projects": {
     "title": "Projekty",
     "live": "Przejdź do dema",
     "video": "Wideo z działania",
@@ -47,19 +44,21 @@
     "salesAssistant": {
       "title": "Sales Assistant",
       "featuresTitle": "Co zrobiłam",
-      "text": "Asystent, który pomaga sprzedawcy znaleźć odpowiedni produkt, głosowo lub tekstowo.",
+      "text": "Asystent AI, który pomaga sprzedawcy znaleźć odpowiedni produkt głosowo lub tekstowo.",
       "items": {
         "voice": "Rozpoznawanie mowy",
-        "chat": "Czat z wynikami produktów",
+        "chat": "Czat AI z historią sesji, tagami dopasowania i obsługą błędów",
         "pdp": "Strona produktu (PDP)",
-        "cart": "Koszyk i checkout",
-        "anonymousCart": "Anonimowy koszyk z commercetools",
-        "footer": "Stopka"
+        "cart": "Koszyk dla gościa i użytkownika (integracja z commercetools)",
+        "i18n": "Obsługa wielu języków z tłumaczeniami pobieranymi z Sanity CMS"
       },
       "screens": {
         "voice": "Głos",
         "chat": "Wyniki czatu",
-        "product": "Strona produktu"
+        "product": "Strona produktu",
+        "popover": "Mini koszyk",
+        "cart": "Koszyk",
+        "checkout": "Checkout"
       }
     },
     "houseStaff": {
@@ -67,15 +66,10 @@
       "text": "Sklep z meblami z pełnym procesem zakupowym, od przeglądania produktów po złożenie zamówienia.",
       "featuresTitle": "Główne funkcje",
       "items": {
-        "wishlist": "Lista życzeń dla gości i zalogowanych użytkowników",
-        "cart": "Koszyk dla gości i zalogowanych użytkowników",
+        "wishlist": "Lista życzeń i koszyk dla gości i zalogowanych użytkowników",
         "checkout": "Składanie zamówienia i historia zamówień",
-        "auth": "Logowanie przez Google",
-        "account": "Konto użytkownika z profilem, zamówieniami i listą życzeń",
-        "state": "Zarządzanie stanem przez useReducer i Context",
-        "server": "Pobieranie danych przez TanStack Query, ze stanami ładowania i błędów",
-        "storybook": "Komponenty UI opisane w Storybooku",
-        "tests": "Testy jednostkowe i komponentowe w Vitest"
+        "auth": "Logowanie przez Google i konto użytkownika",
+        "state": "Zarządzanie stanem przez useReducer i Context"
       },
       "screens": {
         "cart": "Koszyk",
@@ -88,15 +82,14 @@
     }
   },
   "contact": {
-    "title": "Kontakt",
-    "text": "Jestem otwarta na nowe propozycje pracy i ciekawe projekty.",
+    "title": "Jestem otwarta na nowe propozycje pracy i ciekawe projekty.",
     "contactDataTitle": "Kontakt",
-    "socialMediaTitle": "Social media",
     "contactData": {
       "phone": "+48 577 736 858",
       "email": "nadiialezhanska@gmail.com",
       "location": "Wrocław, Polska"
     },
+    "socialMediaTitle": "Social media",
     "socialMedia": {
       "github": "https://github.com/nadia-dot-com",
       "linkedin": "https://www.linkedin.com/in/nadiia-lezhanska"

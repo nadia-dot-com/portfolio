@@ -5,7 +5,7 @@ export const styles = {
   project: {
     flexDir: { base: "column", lg: "row" },
     alignItems: { base: "stretch", lg: "center" },
-    gap: { base: 8, md: 10 },
+    gap: { base: 8, md: 11 },
   },
   frame: {
     background: "surface-color",
@@ -28,7 +28,7 @@ export const styles = {
   },
   info: {
     flexDir: "column",
-    gap: 5,
+    gap: 6,
     flex: "1 1 0",
     minWidth: 0,
   },

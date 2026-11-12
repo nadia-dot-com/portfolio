@@ -31,7 +31,7 @@ interface ScreenGalleryProps {
 const SWIPE_THRESHOLD = 50;
 
 export function ScreenGallery({ screens }: ScreenGalleryProps) {
-  const t = useTranslations("portfolio.gallery");
+  const t = useTranslations("projects.gallery");
   const [current, setCurrent] = useState<number | null>(null);
   const touchStartX = useRef<number | null>(null);
 
