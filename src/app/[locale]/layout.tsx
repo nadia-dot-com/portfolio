@@ -8,6 +8,7 @@ import { styles } from "@/app/[locale]/layout.styles";
 import { Header } from "@/components/Header/Header";
 import { Provider } from "@/components/Provider/Provider";
 import { routing } from "@/i18n/routing";
+import { BETTER_AUTH_URL } from "@/config";
 
 const nunitoSans = Nunito_Sans({
   variable: "--font-nunito-sans",
@@ -23,9 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations();
 
   return {
-    metadataBase: new URL(
-      process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3001",
-    ),
+    metadataBase: BETTER_AUTH_URL,
     title: t("meta.title"),
     description: t("meta.description"),
 

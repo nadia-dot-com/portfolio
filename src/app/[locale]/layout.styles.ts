@@ -1,5 +1,5 @@
 import type { GlobalStyleObject } from "@chakra-ui/react";
-import { gutterX } from "@/charka/shared";
+import { gutterX } from "@/chakra/shared";
 
 export const styles = {
   main: {

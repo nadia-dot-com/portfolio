@@ -3,7 +3,7 @@ import { button, gradientText, sectionBase } from "@/components/shared.styles";
 
 export const styles = {
   root: {
-    height: "90dvh",
+    height: "92dvh",
     ...sectionBase,
     justifyContent: "space-between",
     clipPath: "inset(0 -100vh 0 -100vw)",
@@ -20,8 +20,8 @@ export const styles = {
       position: "absolute",
       zIndex: -1,
       pointerEvents: "none",
-      width: "500px",
-      height: "500px",
+      width: "600px",
+      height: "600px",
       background:
         "radial-gradient(circle, color-mix(in srgb, var(--accent-blue-color) 15%, transparent) 0%, transparent 65%)",
     },
@@ -30,8 +30,8 @@ export const styles = {
       position: "absolute",
       zIndex: -1,
       pointerEvents: "none",
-      width: "500px",
-      height: "500px",
+      width: "600px",
+      height: "600px",
       right: "20%",
       bottom: "-200px",
       background:
@@ -39,7 +39,7 @@ export const styles = {
     },
   },
   image: {
-    width: "450px",
+    width: "500px",
     height: "auto",
   },
   content: {
@@ -49,7 +49,7 @@ export const styles = {
     textAlign: { base: "center", sm: "left" },
     justifyContent: "flex-start",
     gap: { base: 6, md: 8 },
-    maxWidth: "600px",
+    maxWidth: "580px",
     paddingY: { base: 10, md: 16 },
     overflow: "hidden",
     position: "relative",

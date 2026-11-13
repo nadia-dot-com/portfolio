@@ -1,5 +1,6 @@
 import type { GlobalStyleObject } from "@chakra-ui/react";
-import { accentHover, gutterX } from "@/charka/shared";
+import { accentHover, gutterX } from "@/chakra/shared";
+import { dropdownPanel } from "@/components/shared.styles";
 
 const link = {
   fontSize: "xs",
@@ -59,12 +60,7 @@ export const styles = {
     gap: 2,
     listStyle: "none",
     fontWeight: "600",
-    width: "140px",
-    padding: 1,
-    layerStyle: "bordered",
-    rounded: "xl",
-    borderColor: "border-color",
-    backgroundColor: "background-color/90",
+    ...dropdownPanel,
     opacity: 0,
     visibility: "hidden",
     pointerEvents: "none",

@@ -3,7 +3,7 @@
 import { Button, Flex, Grid, Icon, List, Text } from "@chakra-ui/react";
 import { Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useId, useState } from "react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher/LanguageSwitcher";
 import { NextLink } from "@/components/NextLink/NextLink";
 import { styles } from "./Header.styles";
@@ -11,6 +11,7 @@ import { styles } from "./Header.styles";
 export function Header() {
   const t = useTranslations();
   const [isOpen, setIsOpen] = useState(false);
+  const menuId = useId();
 
   const links = [
     { id: "projects", label: t("projects.title") },
@@ -39,13 +40,19 @@ export function Header() {
         <Button
           variant="plain"
           onClick={() => setIsOpen((prev) => !prev)}
+          aria-label={t("nav.menu")}
           aria-expanded={isOpen}
+          aria-controls={menuId}
         >
           <Icon {...styles.icon}>
             <Menu />
           </Icon>
         </Button>
-        <List.Root {...styles.mobileList} data-open={isOpen || undefined}>
+        <List.Root
+          id={menuId}
+          {...styles.mobileList}
+          data-open={isOpen || undefined}
+        >
           {links.map((link) => (
             <List.Item key={link.id}>
               <NextLink href={`#${link.id}`} {...styles.mobileLink}>

@@ -32,7 +32,7 @@ export async function Hero() {
           <Image asChild {...styles.image}>
             <NextImage
               src="/images/hero.png"
-              alt=""
+              alt={t("hero.photoAlt")}
               width={450}
               height={500}
               priority

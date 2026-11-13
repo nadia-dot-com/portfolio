@@ -1,5 +1,6 @@
 import type { GlobalStyleObject } from "@chakra-ui/react";
 import type { CSSProperties } from "react";
+import { dropdownPanel } from "@/components/shared.styles";
 
 export const flagStyle: CSSProperties = {
   width: "1.5em",
@@ -24,14 +25,7 @@ export const styles = {
   indicatorGroup: {
     paddingRight: 2,
   },
-  content: {
-    width: "140px",
-    padding: 1,
-    border: "1px solid",
-    borderColor: "border-color",
-    rounded: "xl",
-    backgroundColor: "background-color/90",
-  },
+  content: dropdownPanel,
   item: {
     justifyContent: "space-between",
     paddingX: 2,

@@ -1,5 +1,5 @@
 import type { GlobalStyleObject } from "@chakra-ui/react";
-import { accentHover } from "@/charka/shared";
+import { accentHover } from "@/chakra/shared";
 import { accentIcon, card, list } from "@/components/shared.styles";
 
 export const styles = {

@@ -5,13 +5,15 @@
     "description": "Check out my portfolio: frontend projects built with React, Next.js and Angular."
   },
   "nav": {
-    "contact": "Contact"
+    "contact": "Contact",
+    "menu": "Menu"
   },
   "hero": {
     "role": "Frontend Developer",
     "intro": "I’m Nadiia, a frontend developer with commercial experience in building modern web applications using React, Next.js, Angular and TypeScript. I like clean code, fewer dependencies and interfaces that feel obvious to use.",
     "cta": "Contact me",
-    "cv": "Download CV"
+    "cv": "Download CV",
+    "photoAlt": "Portrait of Nadiia Lezhanska"
   },
   "tools": {
     "title": "Skills & tools",

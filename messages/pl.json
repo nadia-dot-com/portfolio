@@ -5,13 +5,15 @@
     "description": "Sprawdź moje portfolio: projekty frontendowe w React, Next.js i Angularze."
   },
   "nav": {
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "menu": "Menu"
   },
   "hero": {
     "role": "Frontend Developer",
     "intro": "Nazywam się Nadiia i jestem frontend developerką z komercyjnym doświadczeniem w tworzeniu nowoczesnych aplikacji webowych z wykorzystaniem React, Next.js, Angular i TypeScript. Cenię czysty kod, minimalną liczbę zależności oraz intuicyjne interfejsy.",
     "cta": "Napisz do mnie",
-    "cv": "Pobierz CV"
+    "cv": "Pobierz CV",
+    "photoAlt": "Portret Nadiii Lezhanskiej"
   },
   "tools": {
     "title": "Umiejętności i narzędzia",

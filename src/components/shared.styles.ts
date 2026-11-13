@@ -40,6 +40,14 @@ export const button = {
   backgroundOrigin: "border-box",
 } as const;
 
+export const dropdownPanel = {
+  width: "140px",
+  padding: 1,
+  layerStyle: "bordered",
+  rounded: "xl",
+  backgroundColor: "background-color/90",
+} as const;
+
 export const card = {
   layerStyle: "card",
   flexDir: "column",

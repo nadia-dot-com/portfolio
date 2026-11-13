@@ -7,12 +7,22 @@ import { SymbolIcon } from "@/components/SymbolIcon/SymbolIcon";
 import { ProjectMedia } from "../ProjectMedia/ProjectMedia";
 import { styles } from "./ProjectCard.styles";
 
+interface ProjectScreen {
+  key: string;
+  src: string;
+}
+
+interface ProjectItem {
+  key: string;
+  icon: LucideIcon;
+}
+
 export interface ProjectData {
   id: "salesAssistant" | "houseStaff";
   video: string;
   poster: string;
-  screens?: { key: string; src: string }[];
-  items: { key: string; icon: LucideIcon }[];
+  screens?: ProjectScreen[];
+  items: ProjectItem[];
   tags: string[];
   liveUrl?: string;
   githubUrl?: string;

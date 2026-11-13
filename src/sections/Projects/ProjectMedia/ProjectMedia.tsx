@@ -1,23 +1,12 @@
 "use client";
 
-import {
-  Box,
-  Button,
-  Dialog,
-  Flex,
-  Icon,
-  IconButton,
-  Image,
-  Portal,
-  VisuallyHidden,
-} from "@chakra-ui/react";
-import { ChevronLeft, ChevronRight, Maximize2, Play, X } from "lucide-react";
+import { Box, Button, Flex, Icon, IconButton, Image } from "@chakra-ui/react";
+import { Maximize2, Play } from "lucide-react";
 import NextImage from "next/image";
 import { useTranslations } from "next-intl";
-import { type KeyboardEvent, type TouchEvent, useRef, useState } from "react";
+import { useRef, useState } from "react";
+import { ProjectDialog } from "@/sections/Projects/ProjectDialog/ProjectDialog";
 import { styles } from "@/sections/Projects/ProjectMedia/ProjectMedia.styles";
-
-const SWIPE_THRESHOLD = 50;
 
 interface ProjectMediaProps {
   video: string;
@@ -37,7 +26,6 @@ export function ProjectMedia({
   const [started, setStarted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const touchStartX = useRef<number | null>(null);
 
   const items = [{ key: "video", label: videoLabel }, ...screens];
   const screen = active > 0 ? screens[active - 1] : null;
@@ -50,26 +38,6 @@ export function ProjectMedia({
   const openDialog = () => {
     videoRef.current?.pause();
     setIsOpen(true);
-  };
-
-  const go = (step: number) =>
-    setActive((index) => (index + step + items.length) % items.length);
-
-  const handleKeyDown = (event: KeyboardEvent) => {
-    if ((event.target as HTMLElement).tagName === "VIDEO") return;
-    if (event.key === "ArrowLeft") go(-1);
-    if (event.key === "ArrowRight") go(1);
-  };
-
-  const handleTouchStart = (event: TouchEvent) => {
-    touchStartX.current = event.touches[0].clientX;
-  };
-
-  const handleTouchEnd = (event: TouchEvent) => {
-    if (touchStartX.current === null) return;
-    const deltaX = event.changedTouches[0].clientX - touchStartX.current;
-    touchStartX.current = null;
-    if (Math.abs(deltaX) > SWIPE_THRESHOLD) go(deltaX > 0 ? -1 : 1);
   };
 
   return (
@@ -147,6 +115,7 @@ export function ProjectMedia({
                 alt=""
                 width={176}
                 height={112}
+                sizes="80px"
               />
             </Image>
             {index === 0 && (
@@ -158,84 +127,16 @@ export function ProjectMedia({
         ))}
       </Flex>
 
-      <Dialog.Root
+      <ProjectDialog
         open={isOpen}
-        onOpenChange={({ open }) => setIsOpen(open)}
-        size="full"
-        lazyMount
-        unmountOnExit
-      >
-        <Portal>
-          <Dialog.Backdrop {...styles.backdrop} />
-          <Dialog.Positioner>
-            <Dialog.Content
-              {...styles.dialog}
-              onKeyDown={handleKeyDown}
-              onTouchStart={handleTouchStart}
-              onTouchEnd={handleTouchEnd}
-            >
-              <VisuallyHidden asChild>
-                <Dialog.Title>{items[active].label}</Dialog.Title>
-              </VisuallyHidden>
-              {screen ? (
-                <Image asChild {...styles.fullImage}>
-                  <NextImage
-                    src={screen.src}
-                    alt={screen.label}
-                    width={1600}
-                    height={1000}
-                    sizes="100vw"
-                    draggable={false}
-                  />
-                </Image>
-              ) : (
-                <Box asChild {...styles.fullVideo}>
-                  {/* biome-ignore lint/a11y/useMediaCaption: demo screen recording, no captions available */}
-                  <video
-                    src={video}
-                    poster={poster}
-                    controls
-                    autoPlay
-                    playsInline
-                    aria-label={videoLabel}
-                  />
-                </Box>
-              )}
-              <Dialog.CloseTrigger asChild>
-                <IconButton aria-label={t("close")} {...styles.closeButton}>
-                  <Icon>
-                    <X />
-                  </Icon>
-                </IconButton>
-              </Dialog.CloseTrigger>
-              {items.length > 1 && (
-                <>
-                  <IconButton
-                    aria-label={t("previous")}
-                    onClick={() => go(-1)}
-                    {...styles.arrowButton}
-                    {...styles.arrowLeft}
-                  >
-                    <Icon>
-                      <ChevronLeft />
-                    </Icon>
-                  </IconButton>
-                  <IconButton
-                    aria-label={t("next")}
-                    onClick={() => go(1)}
-                    {...styles.arrowButton}
-                    {...styles.arrowRight}
-                  >
-                    <Icon>
-                      <ChevronRight />
-                    </Icon>
-                  </IconButton>
-                </>
-              )}
-            </Dialog.Content>
-          </Dialog.Positioner>
-        </Portal>
-      </Dialog.Root>
+        onOpenChange={setIsOpen}
+        active={active}
+        onChange={setActive}
+        video={video}
+        poster={poster}
+        videoLabel={videoLabel}
+        screens={screens}
+      />
     </Flex>
   );
 }
