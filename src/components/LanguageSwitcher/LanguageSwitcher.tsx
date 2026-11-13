@@ -28,7 +28,7 @@ export function LanguageSwitcher() {
       collection={languages}
       value={[locale]}
       onValueChange={({ value }) =>
-        router.replace(pathname, { locale: value[0] })
+        router.replace(pathname, { locale: value[0], scroll: false })
       }
       positioning={positioning}
       {...styles.select}

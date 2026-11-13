@@ -21,6 +21,12 @@
     "title": "Projects",
     "live": "Live demo",
     "video": "Demo video",
+    "gallery": {
+      "expand": "Enlarge",
+      "previous": "Previous",
+      "next": "Next",
+      "close": "Close"
+    },
     "salesAssistant": {
       "title": "Sales Assistant",
       "text": "AI assistant that helps a salesperson find the right product by voice or text.",

@@ -8,9 +8,9 @@ import { ProjectMedia } from "../ProjectMedia/ProjectMedia";
 import { styles } from "./ProjectCard.styles";
 
 export interface ProjectData {
-  // namespace in messages: projects.<id>
   id: "salesAssistant" | "houseStaff";
   video: string;
+  poster: string;
   screens?: { key: string; src: string }[];
   items: { key: string; icon: LucideIcon }[];
   tags: string[];
@@ -21,6 +21,7 @@ export interface ProjectData {
 export async function ProjectCard({
   id,
   video,
+  poster,
   screens = [],
   items,
   tags,
@@ -33,6 +34,7 @@ export async function ProjectCard({
     <Flex as="article" {...styles.card}>
       <ProjectMedia
         video={video}
+        poster={poster}
         videoLabel={t("projects.video")}
         screens={screens.map(({ key, src }) => ({
           key,

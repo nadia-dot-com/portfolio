@@ -1,5 +1,14 @@
 import type { GlobalStyleObject } from "@chakra-ui/react";
 
+const iconButton = {
+  layerStyle: "bordered",
+  borderRadius: "full",
+  boxSize: 12,
+  color: "foreground-color",
+  background: "background-color",
+  _hover: { background: "background-hover-color" },
+} as const;
+
 export const styles = {
   root: {
     flexDir: "column",
@@ -18,10 +27,78 @@ export const styles = {
     width: "full",
     height: "full",
     objectFit: "contain",
+    "&::-webkit-media-controls-fullscreen-button": { display: "none" },
+  },
+  expand: {
+    position: "absolute",
+    inset: 0,
+    width: "full",
+    height: "full",
+    padding: 0,
+    cursor: "zoom-in",
+  },
+  expandButton: {
+    position: "absolute",
+    top: 3,
+    right: 3,
+    boxSize: 8,
+    minWidth: 0,
+    borderRadius: "full",
+    layerStyle: "bordered",
+    background: "surface-color",
+    color: "foreground-color",
+    _hover: { background: "background-hover-color" },
+  },
+  expandGlyph: {
+    boxSize: 4,
   },
   stageImage: {
     objectFit: "contain",
   },
+  backdrop: {
+    background: "background-color/90",
+  },
+  dialog: {
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100vw",
+    maxWidth: "100vw",
+    height: "100dvh",
+    margin: 0,
+    background: "transparent",
+    boxShadow: "none",
+    touchAction: "pan-y",
+  },
+  fullImage: {
+    width: "auto",
+    height: "auto",
+    maxWidth: "92vw",
+    maxHeight: "82dvh",
+    objectFit: "contain",
+    borderRadius: "xl",
+    userSelect: "none",
+  },
+  fullVideo: {
+    width: "92vw",
+    maxWidth: "calc(82dvh * 16 / 9)",
+    aspectRatio: "16 / 9",
+    borderRadius: "xl",
+    background: "background-color",
+  },
+  closeButton: {
+    ...iconButton,
+    position: "absolute",
+    top: 4,
+    right: 4,
+  },
+  arrowButton: {
+    ...iconButton,
+    position: "absolute",
+    top: "50%",
+    transform: "translateY(-50%)",
+  },
+  arrowLeft: { left: { base: 2, md: 6 } },
+  arrowRight: { right: { base: 2, md: 6 } },
   play: {
     position: "absolute",
     top: "50%",
@@ -44,6 +121,7 @@ export const styles = {
     padding: 4,
   },
   thumb: {
+    position: "relative",
     width: "80px",
     height: "52px",
     minWidth: 0,
@@ -57,6 +135,18 @@ export const styles = {
       borderColor: "accent-blue-color",
       boxShadow: "0 0 0 1px var(--accent-blue-color)",
     },
+  },
+  thumbBadge: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    boxSize: 6,
+    padding: 1.5,
+    borderRadius: "full",
+    layerStyle: "bordered",
+    background: "surface-color",
+    color: "foreground-color",
   },
   thumbImage: {
     width: "full",

@@ -21,6 +21,12 @@
     "title": "Projekty",
     "live": "Przejdź do dema",
     "video": "Wideo z działania",
+    "gallery": {
+      "expand": "Powiększ",
+      "previous": "Poprzedni",
+      "next": "Następny",
+      "close": "Zamknij"
+    },
     "salesAssistant": {
       "title": "Sales Assistant",
       "text": "Asystent AI, który pomaga sprzedawcy znaleźć odpowiedni produkt głosowo lub tekstowo.",

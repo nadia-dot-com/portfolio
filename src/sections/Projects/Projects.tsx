@@ -18,6 +18,7 @@ const projects: ProjectData[] = [
   {
     id: "salesAssistant",
     video: "/salesAssistant/as-video.mp4",
+    poster: "/salesAssistant/as-video-hero.png",
     screens: [
       { key: "voice", src: "/salesAssistant/listening.png" },
       { key: "chat", src: "/salesAssistant/chat.png" },
@@ -51,6 +52,7 @@ const projects: ProjectData[] = [
   {
     id: "houseStaff",
     video: "/house-staff/house-staff.mp4",
+    poster: "/house-staff/hs-hero.png",
     screens: [
       { key: "products", src: "/house-staff/products.png" },
       { key: "collection", src: "/house-staff/collection.png" },
