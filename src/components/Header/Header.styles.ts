@@ -43,6 +43,7 @@ export const styles = {
   icon: {
     height: "30px",
     width: "30px",
+    color: "foreground-color",
   },
   mobileMenu: {
     display: { base: "flex", md: "none" },

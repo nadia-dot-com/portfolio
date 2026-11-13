@@ -1,22 +1,14 @@
-import {
-  AspectRatio,
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Icon,
-  List,
-  Text,
-} from "@chakra-ui/react";
+import { Button, Flex, Heading, Icon, List, Text } from "@chakra-ui/react";
 import githubOutline from "@iconify-icons/tabler/brand-github";
 import { ArrowUpRight, type LucideIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { NextLink } from "@/components/NextLink/NextLink";
 import { SymbolIcon } from "@/components/SymbolIcon/SymbolIcon";
-import { ScreenGallery } from "../ScreenGallery/ScreenGallery";
-import { styles } from "./Project.styles";
+import { ProjectMedia } from "../ProjectMedia/ProjectMedia";
+import { styles } from "./ProjectCard.styles";
 
 export interface ProjectData {
+  // namespace in messages: projects.<id>
   id: "salesAssistant" | "houseStaff";
   video: string;
   screens?: { key: string; src: string }[];
@@ -26,7 +18,7 @@ export interface ProjectData {
   githubUrl?: string;
 }
 
-export async function Project({
+export async function ProjectCard({
   id,
   video,
   screens = [],
@@ -38,45 +30,32 @@ export async function Project({
   const t = await getTranslations();
 
   return (
-    <Flex {...styles.project}>
-      <Flex {...styles.frame}>
-        <Flex {...styles.dots} aria-hidden>
-          <Box {...styles.dot} />
-          <Box {...styles.dot} />
-          <Box {...styles.dot} />
-        </Flex>
-        <AspectRatio ratio={16 / 9}>
-          <iframe title={t("projects.video")} src={video} allowFullScreen />
-        </AspectRatio>
-        {screens.length > 0 && (
-          <ScreenGallery
-            screens={screens.map(({ key, src }) => ({
-              key,
-              src,
-              label: t(`projects.${id}.screens.${key}`),
-            }))}
-          />
-        )}
-      </Flex>
+    <Flex as="article" {...styles.card}>
+      <ProjectMedia
+        video={video}
+        videoLabel={t("projects.video")}
+        screens={screens.map(({ key, src }) => ({
+          key,
+          src,
+          label: t(`projects.${id}.screens.${key}`),
+        }))}
+      />
 
       <Flex {...styles.info}>
-        <Heading as="h3" {...styles.projectTitle}>
+        <Heading as="h3" {...styles.title}>
           {t(`projects.${id}.title`)}
         </Heading>
         <Text {...styles.text}>{t(`projects.${id}.text`)}</Text>
-        <Flex {...styles.itemsContainer}>
-          <Text {...styles.label}>{t(`projects.${id}.featuresTitle`)}</Text>
-          <List.Root {...styles.list}>
-            {items.map(({ key, icon: ItemIcon }) => (
-              <List.Item key={key} {...styles.listItem}>
-                <Icon {...styles.itemIcon}>
-                  <ItemIcon />
-                </Icon>
-                {t(`projects.${id}.items.${key}`)}
-              </List.Item>
-            ))}
-          </List.Root>
-        </Flex>
+        <List.Root {...styles.list}>
+          {items.map(({ key, icon: ItemIcon }) => (
+            <List.Item key={key} {...styles.listItem}>
+              <Icon {...styles.itemIcon}>
+                <ItemIcon />
+              </Icon>
+              {t(`projects.${id}.items.${key}`)}
+            </List.Item>
+          ))}
+        </List.Root>
         <List.Root {...styles.tags}>
           {tags.map((tag) => (
             <List.Item key={tag} {...styles.tag}>

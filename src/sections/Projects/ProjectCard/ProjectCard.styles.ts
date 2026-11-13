@@ -2,51 +2,25 @@ import type { GlobalStyleObject } from "@chakra-ui/react";
 import { accentIcon, button, list } from "@/components/shared.styles";
 
 export const styles = {
-  project: {
-    flexDir: { base: "column", lg: "row" },
-    alignItems: { base: "stretch", lg: "center" },
-    gap: { base: 8, md: 11 },
-  },
-  frame: {
-    background: "surface-color",
-    flexDir: "column",
-    gap: 3,
-    flex: "1 1 0",
-    minWidth: 0,
-    padding: { base: 3, md: 4 },
-    layerStyle: "glass",
+  card: {
+    display: "grid",
+    gridTemplateColumns: { base: "minmax(0, 1fr)", lg: "minmax(0, 1fr) 400px" },
+    overflow: "hidden",
+    layerStyle: "bordered",
     borderRadius: "2xl",
-  },
-  dots: {
-    gap: 2,
-    paddingX: 1,
-  },
-  dot: {
-    boxSize: 2.5,
-    borderRadius: "full",
-    background: "dot-color",
+    background: "surface-color",
   },
   info: {
     flexDir: "column",
-    gap: 6,
-    flex: "1 1 0",
-    minWidth: 0,
+    gap: 4,
+    padding: { base: 5, md: 8 },
   },
-  label: {
-    textAlign: { base: "center", lg: "left" },
-    fontSize: "xs",
-    letterSpacing: "0.1em",
-    textTransform: "uppercase",
-    color: "text-muted-color",
-  },
-  projectTitle: {
-    textAlign: { base: "center", lg: "left" },
-    fontSize: { base: "3xl", md: "4xl" },
+  title: {
+    fontSize: { base: "2xl", md: "3xl" },
     fontWeight: "500",
     lineHeight: "1.1",
   },
   text: {
-    textAlign: { base: "center", lg: "left" },
     textStyle: "bodyText",
     color: "text-soft-color",
   },
@@ -54,10 +28,6 @@ export const styles = {
     ...list,
     flexDir: "column",
     gap: 3,
-  },
-  itemsContainer: {
-    flexDir: "column",
-    gap: 4,
   },
   listItem: {
     display: "flex",
@@ -75,7 +45,6 @@ export const styles = {
     ...list,
     flexDir: "row",
     flexWrap: "wrap",
-    justifyContent: { base: "center", lg: "flex-start" },
     gap: 2,
   },
   tag: {
@@ -88,10 +57,9 @@ export const styles = {
     background: "surface-color",
   },
   actions: {
-    paddingTop: 2,
     flexWrap: "wrap",
     gap: 3,
-    justifyContent: { base: "center", lg: "flex-start" },
+    paddingTop: 2,
   },
   button,
   secondaryButton: {

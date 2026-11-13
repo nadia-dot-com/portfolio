@@ -13,21 +13,6 @@
     "cta": "Napisz do mnie",
     "cv": "Pobierz CV"
   },
-  "services": {
-    "title": "Czym się zajmuję",
-    "frontend": {
-      "title": "Tworzenie frontendu",
-      "text": "Buduję aplikacje webowe w React, Next.js, Angular i TypeScript, z czystym kodem i minimum zależności."
-    },
-    "responsive": {
-      "title": "Responsywny i dostępny interfejs",
-      "text": "Tworzę interfejsy, które dobrze działają na komputerze, tablecie i telefonie, z naciskiem na wygodę użytkownika."
-    },
-    "testing": {
-      "title": "Testy i dokumentacja",
-      "text": "Piszę testy komponentów, e2e (Vitest, React Testing Library, Cypress) oraz dokumentuję komponenty w Storybooku."
-    }
-  },
   "tools": {
     "title": "Umiejętności i narzędzia",
     "text": "Narzędzia, których używam:"
@@ -36,21 +21,14 @@
     "title": "Projekty",
     "live": "Przejdź do dema",
     "video": "Wideo z działania",
-    "gallery": {
-      "previous": "Poprzedni zrzut ekranu",
-      "next": "Następny zrzut ekranu",
-      "close": "Zamknij"
-    },
     "salesAssistant": {
       "title": "Sales Assistant",
-      "featuresTitle": "Co zrobiłam",
       "text": "Asystent AI, który pomaga sprzedawcy znaleźć odpowiedni produkt głosowo lub tekstowo.",
       "items": {
         "voice": "Rozpoznawanie mowy",
         "chat": "Czat AI z historią sesji, tagami dopasowania i obsługą błędów",
         "pdp": "Strona produktu (PDP)",
-        "cart": "Koszyk dla gościa i użytkownika (integracja z commercetools)",
-        "i18n": "Obsługa wielu języków z tłumaczeniami pobieranymi z Sanity CMS"
+        "cart": "Koszyk dla gościa i użytkownika (integracja z commercetools)"
       },
       "screens": {
         "voice": "Głos",
@@ -64,7 +42,6 @@
     "houseStaff": {
       "title": "House Staff",
       "text": "Sklep z meblami z pełnym procesem zakupowym, od przeglądania produktów po złożenie zamówienia.",
-      "featuresTitle": "Główne funkcje",
       "items": {
         "wishlist": "Lista życzeń i koszyk dla gości i zalogowanych użytkowników",
         "checkout": "Składanie zamówienia i historia zamówień",

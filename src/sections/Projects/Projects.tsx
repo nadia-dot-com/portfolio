@@ -2,7 +2,6 @@ import { Flex } from "@chakra-ui/react";
 import {
   CreditCard,
   Heart,
-  Languages,
   LogIn,
   MessageCircle,
   Mic,
@@ -12,7 +11,7 @@ import {
 } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Section } from "@/components/Section/Section";
-import { Project, type ProjectData } from "./Project/Project";
+import { ProjectCard, type ProjectData } from "./ProjectCard/ProjectCard";
 import { styles } from "./Projects.styles";
 
 const projects: ProjectData[] = [
@@ -32,7 +31,6 @@ const projects: ProjectData[] = [
       { key: "chat", icon: MessageCircle },
       { key: "pdp", icon: Package },
       { key: "cart", icon: ShoppingCart },
-      { key: "i18n", icon: Languages },
     ],
     tags: [
       "Next.js (App Router)",
@@ -91,7 +89,7 @@ export async function Projects() {
     <Section title={t("projects.title")} id="projects">
       <Flex {...styles.list}>
         {projects.map((project) => (
-          <Project key={project.id} {...project} />
+          <ProjectCard key={project.id} {...project} />
         ))}
       </Flex>
     </Section>

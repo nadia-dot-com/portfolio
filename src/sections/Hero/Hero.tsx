@@ -12,7 +12,9 @@ export async function Hero() {
   return (
     <Flex as="section" id="hero" {...styles.root}>
       <Flex {...styles.content}>
-        <Heading as="h1" {...styles.title}>{t("hero.role")}</Heading>
+        <Heading as="h1" {...styles.title}>
+          {t("hero.role")}
+        </Heading>
         <Text {...styles.text}>{t("hero.intro")}</Text>
         <Flex {...styles.actions}>
           <Button {...styles.button}>

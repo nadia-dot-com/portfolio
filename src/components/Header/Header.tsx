@@ -15,7 +15,6 @@ export function Header() {
   const links = [
     { id: "projects", label: t("projects.title") },
     { id: "skills", label: t("tools.title") },
-    { id: "services", label: t("services.title") },
     { id: "contact", label: t("nav.contact") },
   ];
 
@@ -38,6 +37,7 @@ export function Header() {
       <LanguageSwitcher />
       <Flex {...styles.mobileMenu}>
         <Button
+          variant="plain"
           onClick={() => setIsOpen((prev) => !prev)}
           aria-expanded={isOpen}
         >

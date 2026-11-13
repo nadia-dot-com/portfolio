@@ -13,21 +13,6 @@
     "cta": "Contact me",
     "cv": "Download CV"
   },
-  "services": {
-    "title": "What I do",
-    "frontend": {
-      "title": "Frontend development",
-      "text": "I build web applications with React, Next.js, Angular and TypeScript, with clean code and minimal dependencies."
-    },
-    "responsive": {
-      "title": "Responsive and accessible UI",
-      "text": "I make interfaces that work smoothly on desktop, tablet and mobile, with user-friendly design."
-    },
-    "testing": {
-      "title": "Testing and documentation",
-      "text": "I write component and e2e tests (Vitest, React Testing Library, Cypress) and document components in Storybook."
-    }
-  },
   "tools": {
     "title": "Skills & tools",
     "text": "The skills and tools, I use:"
@@ -36,21 +21,14 @@
     "title": "Projects",
     "live": "Live demo",
     "video": "Demo video",
-    "gallery": {
-      "previous": "Previous screenshot",
-      "next": "Next screenshot",
-      "close": "Close"
-    },
     "salesAssistant": {
       "title": "Sales Assistant",
-      "featuresTitle": "What I built",
       "text": "AI assistant that helps a salesperson find the right product by voice or text.",
       "items": {
         "voice": "Voice recognition",
         "chat": "AI chat with session history, match tags and error handling",
         "pdp": "Product page (PDP)",
-        "cart": "Guest and user cart (integrated with commercetools)",
-        "i18n": "Multi-language support with translations fetched from Sanity CMS"
+        "cart": "Guest and user cart (integrated with commercetools)"
       },
       "screens": {
         "voice": "Voice",
@@ -64,7 +42,6 @@
     "houseStaff": {
       "title": "House Staff",
       "text": "A furniture store with the full shopping flow, from browsing products to placing an order.",
-      "featuresTitle": "Main features",
       "items": {
         "wishlist": "Wishlist and cart for guests and logged-in users",
         "checkout": "Checkout and order history",
