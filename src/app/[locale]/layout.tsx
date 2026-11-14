@@ -7,7 +7,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { styles } from "@/app/[locale]/layout.styles";
 import { Header } from "@/components/Header/Header";
 import { Provider } from "@/components/Provider/Provider";
-import { BETTER_AUTH_URL } from "@/config";
+import { PUBLIC_SITE_URL } from "@/config";
 import { routing } from "@/i18n/routing";
 
 const nunitoSans = Nunito_Sans({
@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations();
 
   return {
-    metadataBase: BETTER_AUTH_URL,
+    metadataBase: PUBLIC_SITE_URL,
     title: t("meta.title"),
     description: t("meta.description"),
 

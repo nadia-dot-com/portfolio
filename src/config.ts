@@ -1,3 +1,3 @@
 import { getEnv } from "@/utils/getEnv";
 
-export const BETTER_AUTH_URL = getEnv("BETTER_AUTH_URL");
+export const PUBLIC_SITE_URL = getEnv("NEXT_PUBLIC_SITE_URL");
