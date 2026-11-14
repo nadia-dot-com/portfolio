@@ -13,7 +13,7 @@ import jotai from "@iconify-icons/logos/jotai";
 import nextjs from "@iconify-icons/logos/nextjs-icon";
 import prettier from "@iconify-icons/logos/prettier";
 import react from "@iconify-icons/logos/react";
-import reactQuery from "@iconify-icons/logos/react-query";
+import reactQuery from "@iconify-icons/logos/react-query-icon";
 import redux from "@iconify-icons/logos/redux";
 import sanity from "@iconify-icons/logos/sanity";
 import sass from "@iconify-icons/logos/sass";
@@ -25,13 +25,14 @@ import vitest from "@iconify-icons/logos/vitest";
 import { getTranslations } from "next-intl/server";
 import { Section } from "@/components/Section/Section";
 import { SymbolIcon } from "@/components/SymbolIcon/SymbolIcon";
+import { withLightText } from "@/utils/withLightText";
 import { styles } from "./Skills.styles";
 
 const skills = [
   { name: "TypeScript", icon: typescript },
   { name: "JavaScript", icon: javascript },
-  { name: "HTML", icon: html },
-  { name: "CSS / SCSS", icon: css },
+  { name: "HTML", icon: withLightText(html) },
+  { name: "CSS / SCSS", icon: withLightText(css) },
   { name: "Sass", icon: sass },
   { name: "Tailwind", icon: tailwind },
   { name: "React.js", icon: react },

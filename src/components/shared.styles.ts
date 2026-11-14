@@ -29,6 +29,7 @@ export const sectionBase = {
 
 export const button = {
   paddingX: 5,
+  width: "150px",
   borderRadius: "xl",
   fontSize: "sm",
   fontWeight: "600",

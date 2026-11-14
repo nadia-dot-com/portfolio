@@ -61,6 +61,14 @@ export const styles = {
     gap: 3,
     paddingTop: 2,
   },
+  link: {
+    alignSelf: "flex-start",
+    alignItems: "center",
+    gap: 1,
+    textStyle: "bodyText",
+    color: "text-soft-color",
+    _hover: { color: "foreground-color", textDecoration: "none" },
+  },
   button,
   secondaryButton: {
     ...button,

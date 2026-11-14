@@ -7,8 +7,8 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { styles } from "@/app/[locale]/layout.styles";
 import { Header } from "@/components/Header/Header";
 import { Provider } from "@/components/Provider/Provider";
-import { routing } from "@/i18n/routing";
 import { BETTER_AUTH_URL } from "@/config";
+import { routing } from "@/i18n/routing";
 
 const nunitoSans = Nunito_Sans({
   variable: "--font-nunito-sans",

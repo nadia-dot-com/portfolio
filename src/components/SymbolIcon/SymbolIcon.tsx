@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-interface IconData {
+export interface IconData {
   body: string;
   width?: number;
   height?: number;

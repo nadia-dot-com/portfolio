@@ -26,6 +26,7 @@ export interface ProjectData {
   tags: string[];
   liveUrl?: string;
   githubUrl?: string;
+  storybookUrl?: string;
 }
 
 export async function ProjectCard({
@@ -37,6 +38,7 @@ export async function ProjectCard({
   tags,
   liveUrl,
   githubUrl,
+  storybookUrl,
 }: ProjectData) {
   const t = await getTranslations();
 
@@ -98,6 +100,16 @@ export async function ProjectCard({
               </Button>
             )}
           </Flex>
+        )}
+        {storybookUrl && (
+          <Button asChild {...styles.button}>
+            <NextLink href={storybookUrl}>
+              Storybook
+              <Icon>
+                <ArrowUpRight />
+              </Icon>
+            </NextLink>
+          </Button>
         )}
       </Flex>
     </Flex>

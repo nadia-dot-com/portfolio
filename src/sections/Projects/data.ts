@@ -77,5 +77,6 @@ export const projects: ProjectData[] = [
     ],
     liveUrl: "https://house-staff.onrender.com",
     githubUrl: "https://github.com/nadia-dot-com/house-staff",
+    storybookUrl: "https://nadia-dot-com.github.io/house-staff",
   },
 ];
