@@ -1,6 +1,11 @@
 import type { GlobalStyleObject } from "@chakra-ui/react";
 import { list } from "@/components/shared.styles";
 
+const hoverStyle = {
+  backgroundColor: "background-hover-color",
+  borderColor: "accent-blue-color",
+} as const;
+
 export const styles = {
   content: {
     flexDir: "column",
@@ -17,7 +22,7 @@ export const styles = {
     flexDir: "row",
     flexWrap: "wrap",
     justifyContent: "center",
-    gap: 2,
+    gap: { base: 2, md: 4 },
   },
   item: {
     display: "flex",
@@ -26,12 +31,12 @@ export const styles = {
     gap: 2,
     width: { base: "88px", md: "112px" },
     padding: 3,
+    border: "1px solid transparent",
     borderRadius: "xl",
     outline: "none",
-    position: "relative",
-    isolation: "isolate",
-    _hover:{ opacity: 1 },
-    _focusVisible: { opacity: 1 },
+    transition: "background-color 0.2s, border-color 0.2s",
+    _hover: hoverStyle,
+    _focusVisible: hoverStyle,
   },
   label: {
     fontSize: "xs",
