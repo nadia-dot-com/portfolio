@@ -44,14 +44,23 @@ const skills = [
   { name: "Framer Motion", icon: framer, invert: true },
   { name: "Figma", icon: figma },
   { name: "Sanity (CMS)", icon: sanity },
-  { name: "Cypress (e2e)", icon: cypress },
-  { name: "Vitest", icon: vitest },
-  { name: "React Testing Library", icon: testingLibrary },
-  { name: "Storybook", icon: storybook },
   { name: "Git", icon: git },
   { name: "GitHub", icon: github, invert: true },
   { name: "Bitbucket", icon: bitbucket },
   { name: "Prettier", icon: prettier },
+  {
+    name: "Cypress (e2e)",
+    icon: {
+      ...cypress,
+      body: cypress.body.replace(
+        /fill="#[^"]*"/g,
+        'fill="var(--foreground-color)"',
+      ),
+    },
+  },
+  { name: "Vitest", icon: vitest },
+  { name: "Storybook", icon: storybook },
+  { name: "React Testing Library", icon: testingLibrary },
 ];
 
 export async function Skills() {
@@ -63,16 +72,16 @@ export async function Skills() {
         <Text {...styles.intro}>{t("tools.text")}</Text>
         <List.Root aria-label={t("tools.title")} {...styles.list}>
           {skills.map(({ name, icon, invert }) => (
-            <List.Item key={name}>
-              <Icon
-                role="img"
-                aria-hidden={false}
-                aria-label={name}
-                {...styles.icon}
-                filter={invert ? "invert(1)" : undefined}
-              >
+            <List.Item
+              key={name}
+              className="group"
+              tabIndex={0}
+              {...styles.item}
+            >
+              <Icon {...styles.icon} filter={invert ? "invert(1)" : undefined}>
                 <SymbolIcon icon={icon} />
               </Icon>
+              <Text {...styles.label}>{name}</Text>
             </List.Item>
           ))}
         </List.Root>
