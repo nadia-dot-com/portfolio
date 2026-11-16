@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nadiia Lezhanska – Portfolio
 
-## Getting Started
+This is my personal website. I am a frontend developer. Here you can see who I am, what I built, and what tools I use.
 
-First, run the development server:
+**Live site:** https://nadiia-lezhanska.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## What you can find on the site
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Hero** – a short intro about me and a button to download my CV.
+- **Projects** – two projects with a video, screenshots, and a short description. You can open the screenshots and the video in full screen.
+- **Skills & tools** – the technologies I work with. Move your mouse over an icon to see its name.
+- **Contact** – ways to get in touch with me.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The site has three languages: English, Polish, and Ukrainian. My CV is also in these three languages.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Built with
 
-## Learn More
+- [Next.js](https://nextjs.org) (App Router) and React 19
+- TypeScript
+- [Chakra UI](https://chakra-ui.com) for the design
+- [next-intl](https://next-intl.dev) for the languages
+- [Biome](https://biomejs.dev) for checking and formatting the code
 
-To learn more about Next.js, take a look at the following resources:
+## Run it on your computer
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You need [Node.js](https://nodejs.org) and [Yarn](https://yarnpkg.com).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Install the packages:
 
-## Deploy on Vercel
+   ```bash
+   yarn install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Create your env file. Copy the example file:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   cp .env.example .env
+   ```
+
+   Then open `.env` and check the value. It is the address of the website:
+
+   ```
+   NEXT_PUBLIC_SITE_URL=https://nadiia-lezhanska.vercel.app
+   ```
+
+   If you run the site only on your computer, you can use `http://localhost:3000`.
+
+3. Start the site:
+
+   ```bash
+   yarn dev
+   ```
+
+## Contact
+
+Write to me through the contact section on the [live site](https://nadiia-lezhanska.vercel.app).
